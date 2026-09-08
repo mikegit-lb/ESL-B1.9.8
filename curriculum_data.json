@@ -1,0 +1,664 @@
+{
+  "theme": "daily life",
+  "l1": "Turkish",
+  "level": "CEFR A2",
+  "verbs": [
+    {
+      "base": "go",
+      "v2": "went",
+      "v3": "gone",
+      "type": "Irregular",
+      "tr": "gitmek"
+    },
+    {
+      "base": "eat",
+      "v2": "ate",
+      "v3": "eaten",
+      "type": "Irregular",
+      "tr": "yemek"
+    },
+    {
+      "base": "see",
+      "v2": "saw",
+      "v3": "seen",
+      "type": "Irregular",
+      "tr": "görmek"
+    },
+    {
+      "base": "do",
+      "v2": "did",
+      "v3": "done",
+      "type": "Irregular",
+      "tr": "yapmak"
+    },
+    {
+      "base": "make",
+      "v2": "made",
+      "v3": "made",
+      "type": "Irregular",
+      "tr": "yapmak / hazırlamak"
+    },
+    {
+      "base": "take",
+      "v2": "took",
+      "v3": "taken",
+      "type": "Irregular",
+      "tr": "almak / götürmek"
+    },
+    {
+      "base": "leave",
+      "v2": "left",
+      "v3": "left",
+      "type": "Irregular",
+      "tr": "ayrılmak / çıkmak"
+    },
+    {
+      "base": "lose",
+      "v2": "lost",
+      "v3": "lost",
+      "type": "Irregular",
+      "tr": "kaybetmek"
+    },
+    {
+      "base": "forget",
+      "v2": "forgot",
+      "v3": "forgotten",
+      "type": "Irregular",
+      "tr": "unutmak"
+    },
+    {
+      "base": "finish",
+      "v2": "finished",
+      "v3": "finished",
+      "type": "Regular",
+      "tr": "bitirmek"
+    },
+    {
+      "base": "watch",
+      "v2": "watched",
+      "v3": "watched",
+      "type": "Regular",
+      "tr": "izlemek"
+    },
+    {
+      "base": "play",
+      "v2": "played",
+      "v3": "played",
+      "type": "Regular",
+      "tr": "oynamak"
+    },
+    {
+      "base": "buy",
+      "v2": "bought",
+      "v3": "bought",
+      "type": "Irregular",
+      "tr": "satın almak"
+    },
+    {
+      "base": "come",
+      "v2": "came",
+      "v3": "come",
+      "type": "Irregular",
+      "tr": "gelmek"
+    },
+    {
+      "base": "get",
+      "v2": "got",
+      "v3": "got",
+      "type": "Irregular",
+      "tr": "varmak / almak"
+    }
+  ],
+  "checkpoint": [
+    {
+      "id": "a3_1",
+      "text": "Canan plays tennis with her brother every week.",
+      "tense": "PRESENT",
+      "signal": "every week",
+      "reason": "Routine habit with 3rd person singular -s."
+    },
+    {
+      "id": "a3_2",
+      "text": "We made fresh coffee two hours ago.",
+      "tense": "PAST",
+      "signal": "two hours ago",
+      "reason": "Completed event at specific past time (V2 made)."
+    },
+    {
+      "id": "a3_3",
+      "text": "Burak usually leaves home at eight o'clock.",
+      "tense": "PRESENT",
+      "signal": "usually",
+      "reason": "Frequency adverb describing daily morning routine."
+    },
+    {
+      "id": "a3_4",
+      "text": "They bought food at the market yesterday.",
+      "tense": "PAST",
+      "signal": "yesterday",
+      "reason": "Completed past event with V2 bought."
+    },
+    {
+      "id": "a3_5",
+      "text": "I never lose my house keys.",
+      "tense": "PRESENT",
+      "signal": "never",
+      "reason": "Permanent fact/habit with adverb never."
+    },
+    {
+      "id": "a3_6",
+      "text": "Murat saw his old school friend last week.",
+      "tense": "PAST",
+      "signal": "last week",
+      "reason": "Completed past event with V2 saw."
+    }
+  ],
+  "exercises": {
+    "type0": [
+      {
+        "id": "t0_1",
+        "prompt": "Emre always _____ his homework before dinner.",
+        "options": [
+          "finish",
+          "finishes",
+          "finished",
+          "finishing"
+        ],
+        "correct": 1,
+        "answerText": "finishes",
+        "reason": "Routine with always + 3rd person singular (he).",
+        "tag": "R"
+      },
+      {
+        "id": "t0_2",
+        "prompt": "We _____ a new sofa two days ago.",
+        "options": [
+          "buy",
+          "buys",
+          "bought",
+          "have buy"
+        ],
+        "correct": 2,
+        "answerText": "bought",
+        "reason": "Past event with two days ago (V2 bought).",
+        "tag": "R"
+      },
+      {
+        "id": "t0_3",
+        "prompt": "Burak _____ his house keys yesterday evening.",
+        "options": [
+          "loses",
+          "lost",
+          "lose",
+          "is losing"
+        ],
+        "correct": 1,
+        "answerText": "lost",
+        "reason": "Past time with yesterday evening (V2 lost).",
+        "tag": "R"
+      },
+      {
+        "id": "t0_4",
+        "prompt": "They _____ computer games on Sunday mornings.",
+        "options": [
+          "plays",
+          "played",
+          "play",
+          "are played"
+        ],
+        "correct": 2,
+        "answerText": "play",
+        "reason": "Habit on Sundays with plural subject (They).",
+        "tag": "R"
+      },
+      {
+        "id": "t0_5",
+        "prompt": "Selin _____ to Antalya last summer.",
+        "options": [
+          "goes",
+          "went",
+          "go",
+          "gone"
+        ],
+        "correct": 1,
+        "answerText": "went",
+        "reason": "Finished past event with last summer (V2 went).",
+        "tag": "R"
+      },
+      {
+        "id": "t0_6",
+        "prompt": "Canan _____ meat because she is a vegetarian.",
+        "options": [
+          "didn't eat",
+          "doesn't eat",
+          "don't eat",
+          "not eat"
+        ],
+        "correct": 1,
+        "answerText": "doesn't eat",
+        "reason": "Present fact with 3rd person singular (Canan).",
+        "tag": "R"
+      },
+      {
+        "id": "t0_7",
+        "prompt": "Murat _____ football with his friends two hours ago.",
+        "options": [
+          "plays",
+          "play",
+          "played",
+          "has played"
+        ],
+        "correct": 2,
+        "answerText": "played",
+        "reason": "Completed past event with two hours ago (V2 played).",
+        "tag": "R"
+      },
+      {
+        "id": "t0_8",
+        "prompt": "I usually _____ home at seven o'clock every morning.",
+        "options": [
+          "leave",
+          "leaves",
+          "left",
+          "am leaving"
+        ],
+        "correct": 0,
+        "answerText": "leave",
+        "reason": "Daily routine with usually and subject I.",
+        "tag": "R"
+      }
+    ],
+    "type1": [
+      {
+        "id": "t1_1",
+        "prompt": "Before 2020, Aylin _____ (never / see) the sea.",
+        "accepted": [
+          "had never seen",
+          "hadn't seen"
+        ],
+        "answerText": "had never seen",
+        "reason": "Requires had + never + V3 seen.",
+        "tag": "P"
+      },
+      {
+        "id": "t1_2",
+        "prompt": "When the teacher arrived, the students _____ (already / do) the test.",
+        "accepted": [
+          "had already done"
+        ],
+        "answerText": "had already done",
+        "reason": "Requires had + already + V3 done.",
+        "tag": "P"
+      },
+      {
+        "id": "t1_3",
+        "prompt": "Burak was tired because he _____ (not / eat) breakfast.",
+        "accepted": [
+          "had not eaten",
+          "hadn't eaten"
+        ],
+        "answerText": "had not eaten",
+        "reason": "Negative past perfect requires had not + V3 eaten.",
+        "tag": "P"
+      },
+      {
+        "id": "t1_4",
+        "prompt": "They were happy because they _____ (buy) the last tickets.",
+        "accepted": [
+          "had bought"
+        ],
+        "answerText": "had bought",
+        "reason": "Requires had + V3 bought.",
+        "tag": "F"
+      },
+      {
+        "id": "t1_5",
+        "prompt": "When we arrived, our friends _____ (already / leave) the party.",
+        "accepted": [
+          "had already left"
+        ],
+        "answerText": "had already left",
+        "reason": "Requires had + already + V3 left.",
+        "tag": "F"
+      },
+      {
+        "id": "t1_6",
+        "prompt": "I looked for my watch, but I _____ (lose) it.",
+        "accepted": [
+          "had lost"
+        ],
+        "answerText": "had lost",
+        "reason": "Requires had + V3 lost.",
+        "tag": "P"
+      },
+      {
+        "id": "t1_7",
+        "prompt": "By seven o'clock, Canan _____ (make) dinner for everyone.",
+        "accepted": [
+          "had made"
+        ],
+        "answerText": "had made",
+        "reason": "Requires had + V3 made.",
+        "tag": "F"
+      },
+      {
+        "id": "t1_8",
+        "prompt": "_____ you _____ (finish) the book before the lesson began?",
+        "accepted": [
+          "had you finished",
+          "had finished"
+        ],
+        "answerText": "Had you finished",
+        "reason": "Question form: Had + Subject + V3 finished.",
+        "tag": "F"
+      }
+    ],
+    "type2": [
+      {
+        "id": "t2_1",
+        "prompt": "When I got to the cinema, the film _____ .",
+        "options": [
+          "starts",
+          "started",
+          "had started",
+          "has started"
+        ],
+        "correct": 2,
+        "answerText": "had started",
+        "reason": "The film started before I got there (earlier past = had + V3).",
+        "tag": "S"
+      },
+      {
+        "id": "t2_2",
+        "prompt": "Selin was sad because she _____ her phone.",
+        "options": [
+          "loses",
+          "had lost",
+          "lost",
+          "has lost"
+        ],
+        "correct": 1,
+        "answerText": "had lost",
+        "reason": "Losing the phone happened first, causing past sadness.",
+        "tag": "S"
+      },
+      {
+        "id": "t2_3",
+        "prompt": "After we _____ our breakfast, we walked to school.",
+        "options": [
+          "had eaten",
+          "eat",
+          "ate",
+          "have eaten"
+        ],
+        "correct": 0,
+        "answerText": "had eaten",
+        "reason": "After introduces the earlier action (had eaten).",
+        "tag": "S"
+      },
+      {
+        "id": "t2_4",
+        "prompt": "Emre arrived at 9:00, but the bus _____ at 8:50.",
+        "options": [
+          "left",
+          "has left",
+          "leaves",
+          "had left"
+        ],
+        "correct": 3,
+        "answerText": "had left",
+        "reason": "8:50 is earlier than 9:00; earlier past requires had left.",
+        "tag": "S"
+      },
+      {
+        "id": "t2_5",
+        "prompt": "Murat showed me the car that he _____ two days before.",
+        "options": [
+          "had bought",
+          "bought",
+          "buys",
+          "has bought"
+        ],
+        "correct": 0,
+        "answerText": "had bought",
+        "reason": "The purchase happened prior to showing the car.",
+        "tag": "S"
+      },
+      {
+        "id": "t2_6",
+        "prompt": "Canan couldn't open the door because she _____ her key.",
+        "options": [
+          "forgot",
+          "had forgotten",
+          "forgets",
+          "has forgotten"
+        ],
+        "correct": 1,
+        "answerText": "had forgotten",
+        "reason": "Forgetting happened earlier at home (had forgotten).",
+        "tag": "P"
+      },
+      {
+        "id": "t2_7",
+        "prompt": "By the time Deniz called me, I _____ to bed.",
+        "options": [
+          "went",
+          "had gone",
+          "go",
+          "have gone"
+        ],
+        "correct": 1,
+        "answerText": "had gone",
+        "reason": "By the time signals completion before the call.",
+        "tag": "W"
+      },
+      {
+        "id": "t2_8",
+        "prompt": "When we reached the café, our friends _____ their drinks.",
+        "options": [
+          "took",
+          "had taken",
+          "take",
+          "have taken"
+        ],
+        "correct": 1,
+        "answerText": "had taken",
+        "reason": "Friends collected drinks before we reached the café.",
+        "tag": "S"
+      }
+    ],
+    "type3": [
+      {
+        "id": "t3_1",
+        "prompt": "Action 1: Burak bought the bread. Action 2: Burak came home. (after)",
+        "accepted": [
+          "after burak had bought the bread, he came home.",
+          "after burak had bought the bread he came home.",
+          "burak came home after he had bought the bread."
+        ],
+        "answerText": "After Burak had bought the bread, he came home.",
+        "reason": "Buying bread happened first (had bought); coming home later (came).",
+        "tag": "S"
+      },
+      {
+        "id": "t3_2",
+        "prompt": "Action 1: Aylin finished her work. Action 2: Aylin watched TV. (before)",
+        "accepted": [
+          "aylin had finished her work before she watched tv.",
+          "before she watched tv, aylin had finished her work."
+        ],
+        "answerText": "Aylin had finished her work before she watched TV.",
+        "reason": "Finishing happened first (had finished); watching happened second (watched).",
+        "tag": "S"
+      },
+      {
+        "id": "t3_3",
+        "prompt": "Action 1: The train left the station. Action 2: We got to the platform. (when)",
+        "accepted": [
+          "when we got to the platform, the train had left.",
+          "the train had left when we got to the platform."
+        ],
+        "answerText": "When we got to the platform, the train had left.",
+        "reason": "Train left first (had left); got to platform later (got).",
+        "tag": "S"
+      },
+      {
+        "id": "t3_4",
+        "prompt": "Action 1: Deniz made a cake. Action 2: The guests arrived. (by the time)",
+        "accepted": [
+          "by the time the guests arrived, deniz had made a cake.",
+          "deniz had made a cake by the time the guests arrived."
+        ],
+        "answerText": "By the time the guests arrived, Deniz had made a cake.",
+        "reason": "Cake making was completed earlier (had made).",
+        "tag": "W"
+      },
+      {
+        "id": "t3_5",
+        "prompt": "Action 1: Emre lost his card. Action 2: Emre took a taxi. (because)",
+        "accepted": [
+          "emre took a taxi because he had lost his card.",
+          "emre took a taxi because he had lost his transport card."
+        ],
+        "answerText": "Emre took a taxi because he had lost his card.",
+        "reason": "Losing card happened first (had lost); taking taxi was later (took).",
+        "tag": "S"
+      },
+      {
+        "id": "t3_6",
+        "prompt": "Action 1: They played football. Action 2: They ate dinner. (after)",
+        "accepted": [
+          "after they had played football, they ate dinner.",
+          "they ate dinner after they had played football."
+        ],
+        "answerText": "After they had played football, they ate dinner.",
+        "reason": "Playing football was first (had played); eating was second (ate).",
+        "tag": "S"
+      },
+      {
+        "id": "t3_7",
+        "prompt": "Action 1: Canan packed her bags. Action 2: Canan left the hotel. (before)",
+        "accepted": [
+          "canan had taken her bags before she left the hotel.",
+          "before she left the hotel, canan had taken her bags."
+        ],
+        "answerText": "Canan had taken her bags before she left the hotel.",
+        "reason": "Taking bags was earlier (had taken); leaving was second (left).",
+        "tag": "S"
+      },
+      {
+        "id": "t3_8",
+        "prompt": "Action 1: The shop closed. Action 2: Murat arrived. (when)",
+        "accepted": [
+          "when murat arrived, the shop had closed.",
+          "the shop had closed when murat arrived."
+        ],
+        "answerText": "When Murat arrived, the shop had closed.",
+        "reason": "Shop closed first (had closed); Murat arrived second (arrived).",
+        "tag": "S"
+      }
+    ],
+    "type4": [
+      {
+        "id": "t4_1",
+        "prompt": "When I got to the bus stop, the bus left.",
+        "accepted": [
+          "when i got to the bus stop, the bus had left.",
+          "when i got to the bus stop the bus had left."
+        ],
+        "answerText": "When I got to the bus stop, the bus had left.",
+        "reason": "Missing auxiliary had. Turkish learners often omit had.",
+        "tag": "F"
+      },
+      {
+        "id": "t4_2",
+        "prompt": "Burak was sad because he had lose his watch.",
+        "accepted": [
+          "burak was sad because he had lost his watch."
+        ],
+        "answerText": "Burak was sad because he had lost his watch.",
+        "reason": "Used V1 lose instead of V3 lost after had.",
+        "tag": "P"
+      },
+      {
+        "id": "t4_3",
+        "prompt": "Before we went to sleep, we have finished all our homework.",
+        "accepted": [
+          "before we went to sleep, we had finished all our homework."
+        ],
+        "answerText": "Before we went to sleep, we had finished all our homework.",
+        "reason": "Used have instead of had for earlier past.",
+        "tag": "F"
+      },
+      {
+        "id": "t4_4",
+        "prompt": "Aylin arrived at the cinema after the film started.",
+        "accepted": [
+          "aylin arrived at the cinema after the film had started."
+        ],
+        "answerText": "Aylin arrived at the cinema after the film had started.",
+        "reason": "The earlier event after after requires past perfect had started.",
+        "tag": "S"
+      },
+      {
+        "id": "t4_5",
+        "prompt": "By eight o'clock yesterday, Canan had make fresh bread.",
+        "accepted": [
+          "by eight o'clock yesterday, canan had made fresh bread."
+        ],
+        "answerText": "By eight o'clock yesterday, Canan had made fresh bread.",
+        "reason": "Used V1 make instead of V3 made.",
+        "tag": "P"
+      },
+      {
+        "id": "t4_6",
+        "prompt": "They hadn't ate breakfast before they took the morning bus.",
+        "accepted": [
+          "they hadn't eaten breakfast before they took the morning bus.",
+          "they had not eaten breakfast before they took the morning bus."
+        ],
+        "answerText": "They hadn't eaten breakfast before they took the morning bus.",
+        "reason": "Used V2 ate instead of V3 eaten.",
+        "tag": "P"
+      },
+      {
+        "id": "t4_7",
+        "prompt": "Emre always finish his work at five o'clock every day.",
+        "accepted": [
+          "emre always finishes his work at five o'clock every day."
+        ],
+        "answerText": "Emre always finishes his work at five o'clock every day.",
+        "reason": "Review error: 3rd person singular requires finishes (-es).",
+        "tag": "R"
+      },
+      {
+        "id": "t4_8",
+        "prompt": "Did you bought bread at the supermarket yesterday?",
+        "accepted": [
+          "did you buy bread at the supermarket yesterday?"
+        ],
+        "answerText": "Did you buy bread at the supermarket yesterday?",
+        "reason": "Review error: After Did, the verb returns to base form buy.",
+        "tag": "R"
+      }
+    ]
+  },
+  "comprehension": [
+    {
+      "q": "Did Mert eat breakfast at home or at the bus stop?",
+      "a": "He ate breakfast at home (before he left his apartment, he had eaten a sandwich)."
+    },
+    {
+      "q": "What happened before Mert arrived at the bus stop?",
+      "a": "His usual bus had already gone."
+    },
+    {
+      "q": "Why did Can buy two train tickets?",
+      "a": "Because he had seen the heavy traffic earlier."
+    },
+    {
+      "q": "Where were the two friends by nine o'clock?",
+      "a": "They had gotten to the office safely."
+    }
+  ]
+}

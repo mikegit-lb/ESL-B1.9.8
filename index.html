@@ -1,0 +1,1801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Present &amp; Past Simple to Past Perfect (A2) — 1:1 Online Edition</title>
+  <style>
+    :root {
+      --primary: #1d4ed8;
+      --primary-dark: #1e40af;
+      --primary-light: #dbeafe;
+      --secondary: #0f766e;
+      --accent: #b45309;
+      --bg: #f8fafc;
+      --surface: #ffffff;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --border: #e2e8f0;
+      --success: #15803d;
+      --success-bg: #dcfce7;
+      --error: #b91c1c;
+      --error-bg: #fee2e2;
+      --warning: #b45309;
+      --warning-bg: #fef3c7;
+      --tag-f: #dc2626;
+      --tag-p: #9333ea;
+      --tag-s: #2563eb;
+      --tag-w: #d97706;
+      --tag-r: #059669;
+      --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: var(--font-family);
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+    header {
+      background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
+      color: #ffffff;
+      padding: 20px;
+      border-bottom: 4px solid #3b82f6;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .header-title h1 {
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+    .header-title p {
+      font-size: 0.92rem;
+      opacity: 0.9;
+      margin-top: 4px;
+    }
+    .header-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      font-size: 0.85rem;
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-primary { background-color: var(--primary); color: #fff; }
+    .btn-primary:hover { background-color: var(--primary-dark); }
+    .btn-outline { background-color: transparent; border-color: #cbd5e1; color: var(--text); }
+    .btn-outline:hover { background-color: #f1f5f9; }
+    .btn-outline-white { background-color: transparent; border-color: rgba(255,255,255,0.6); color: #fff; }
+    .btn-outline-white:hover { background-color: rgba(255,255,255,0.18); }
+    .btn-accent { background-color: #f59e0b; color: #78350f; font-weight: 700; }
+    .btn-accent:hover { background-color: #d97706; color: #fff; }
+    .btn-sm { padding: 5px 10px; font-size: 0.8rem; }
+    
+    .nav-bar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      gap: 8px;
+      padding: 10px 20px;
+      overflow-x: auto;
+    }
+    .nav-tab {
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      cursor: pointer;
+      white-space: nowrap;
+      border: 1px solid transparent;
+      transition: all 0.15s ease;
+    }
+    .nav-tab:hover { color: var(--text); background: #f1f5f9; }
+    .nav-tab.active {
+      color: var(--primary);
+      background: var(--primary-light);
+      border-color: #bfdbfe;
+    }
+
+    .main-container {
+      max-width: 1200px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+    .section-view { display: none; }
+    .section-view.active { display: block; animation: fadeIn 0.25s ease-in; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+    .card {
+      background: var(--surface);
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+    .card-title {
+      font-size: 1.22rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #0f172a;
+      border-bottom: 2px solid #f1f5f9;
+      padding-bottom: 10px;
+    }
+    .card-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    .rule-box {
+      background: #eff6ff;
+      border-left: 4px solid var(--primary);
+      padding: 14px 18px;
+      border-radius: 0 6px 6px 0;
+      margin-bottom: 18px;
+      font-weight: 500;
+      color: #1e3a8a;
+    }
+    .l1-box {
+      background: #fffbeb;
+      border-left: 4px solid var(--warning);
+      padding: 12px 16px;
+      border-radius: 0 6px 6px 0;
+      margin: 12px 0;
+      font-size: 0.9rem;
+      color: #92400e;
+    }
+    .table-wrapper { overflow-x: auto; margin-bottom: 18px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    th, td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+    }
+    th {
+      background-color: #f8fafc;
+      font-weight: 700;
+      color: #334155;
+    }
+    tr:nth-child(even) { background-color: #fcfdfe; }
+    .v3-highlight {
+      background-color: #fef08a !important;
+      font-weight: 800;
+      color: #854d0e;
+    }
+
+    /* Timeline */
+    .timeline-container {
+      background: #0f172a;
+      color: #fff;
+      padding: 24px;
+      border-radius: 8px;
+      margin: 20px 0;
+      overflow-x: auto;
+    }
+    .timeline-track {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      min-width: 600px;
+      padding: 30px 20px;
+    }
+    .timeline-track::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      right: 10px;
+      top: 50%;
+      height: 4px;
+      background: #475569;
+      z-index: 1;
+    }
+    .timeline-node {
+      position: relative;
+      z-index: 2;
+      background: #1e293b;
+      border: 2px solid #64748b;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-align: center;
+      width: 190px;
+    }
+    .timeline-node.earlier {
+      border-color: #38bdf8;
+      background: #0c4a6e;
+    }
+    .timeline-node.later {
+      border-color: #f59e0b;
+      background: #78350f;
+    }
+    .timeline-node.now {
+      border-color: #10b981;
+      background: #064e3b;
+      width: 120px;
+    }
+    .timeline-node .tense-tag {
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .timeline-node .tense-content {
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    /* Speaking Cards */
+    .speaking-card {
+      border: 2px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      background: #fff;
+    }
+    .speaking-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .badge {
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: #e2e8f0;
+      color: #334155;
+    }
+    .badge-primary { background: #dbeafe; color: #1e40af; }
+    .badge-secondary { background: #ccfbf1; color: #0f766e; }
+    .timer-box {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: #f1f5f9;
+      padding: 10px 16px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+    .timer-display {
+      font-size: 1.25rem;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      color: #0f172a;
+    }
+    .frame-box {
+      background: #faf5ff;
+      border: 1px solid #e9d5ff;
+      padding: 16px;
+      border-radius: 6px;
+      margin: 14px 0;
+    }
+    .frame-item {
+      padding: 8px 12px;
+      background: #fff;
+      border: 1px solid #f3e8ff;
+      border-radius: 4px;
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      display: none;
+    }
+    .frame-item.revealed { display: block; animation: fadeIn 0.2s ease; }
+    .checklist {
+      margin-top: 14px;
+      padding: 12px 16px;
+      background: #f8fafc;
+      border-radius: 6px;
+      border: 1px solid var(--border);
+    }
+    .checklist label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+      cursor: pointer;
+    }
+
+    /* Exercises */
+    .exercise-item {
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      margin-bottom: 16px;
+      background: #fff;
+      transition: border-color 0.2s ease;
+    }
+    .exercise-prompt {
+      font-weight: 600;
+      font-size: 0.98rem;
+      margin-bottom: 12px;
+    }
+    .options-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+    .option-btn {
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 0.9rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      background: #fff;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .option-btn:hover { background: #f8fafc; border-color: var(--primary); }
+    .option-btn.selected { border-color: var(--primary); background: var(--primary-light); }
+    .option-btn.correct-choice { background: var(--success-bg); border-color: var(--success); font-weight: 700; }
+    .option-btn.wrong-choice { background: var(--error-bg); border-color: var(--error); }
+    .input-text {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 0.92rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      outline: none;
+      margin-bottom: 10px;
+    }
+    .input-text:focus { border-color: var(--primary); }
+    .feedback-box {
+      display: none;
+      padding: 12px 14px;
+      border-radius: 6px;
+      margin-top: 10px;
+      font-size: 0.88rem;
+    }
+    .feedback-box.correct {
+      display: block;
+      background: var(--success-bg);
+      color: #14532d;
+      border: 1px solid #86efac;
+    }
+    .feedback-box.wrong {
+      display: block;
+      background: var(--error-bg);
+      color: #7f1d1d;
+      border: 1px solid #fca5a5;
+    }
+    .tag-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      padding: 2px 6px;
+      border-radius: 4px;
+      color: #fff;
+      margin-right: 6px;
+    }
+    .tag-f { background-color: var(--tag-f); }
+    .tag-p { background-color: var(--tag-p); }
+    .tag-s { background-color: var(--tag-s); }
+    .tag-w { background-color: var(--tag-w); }
+    .tag-r { background-color: var(--tag-r); }
+    
+    .diag-dashboard {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 18px;
+      margin: 20px 0;
+    }
+    .diag-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 12px;
+      margin: 14px 0;
+    }
+    .diag-metric {
+      background: #fff;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px;
+      text-align: center;
+    }
+    .diag-metric-count {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--text);
+    }
+    .diag-metric-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+
+    .teacher-panel {
+      display: none;
+      background: #f0fdf4;
+      border: 2px dashed #16a34a;
+      border-radius: 8px;
+      padding: 16px;
+      margin: 16px 0;
+    }
+    body.teacher-mode .teacher-panel { display: block; }
+    body.teacher-mode .teacher-btn-toggle { background: #16a34a !important; color: #fff !important; }
+    .noticing-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      padding: 18px;
+      background: #fdfdfd;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* ================= 1:1 ONLINE SESSION NOTES DRAWER ================= */
+    .notes-toggle-floating {
+      position: fixed;
+      right: 20px;
+      bottom: 24px;
+      z-index: 999;
+      background: #0f766e;
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 50px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.2);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border: 2px solid #fff;
+      transition: all 0.2s ease;
+    }
+    .notes-toggle-floating:hover {
+      background: #115e59;
+      transform: translateY(-2px);
+    }
+    .notes-drawer {
+      position: fixed;
+      top: 0;
+      right: -450px;
+      width: 420px;
+      max-width: 90vw;
+      height: 100vh;
+      background: #ffffff;
+      box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+      z-index: 1000;
+      transition: right 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      border-left: 1px solid var(--border);
+    }
+    .notes-drawer.open {
+      right: 0;
+    }
+    .notes-header {
+      background: #0f766e;
+      color: #fff;
+      padding: 16px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .notes-header h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+    .notes-body {
+      padding: 20px;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .notes-footer {
+      padding: 14px 20px;
+      border-top: 1px solid var(--border);
+      background: #f8fafc;
+      display: flex;
+      gap: 10px;
+      justify-content: flex-end;
+    }
+    .note-field {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .note-field label {
+      font-weight: 700;
+      font-size: 0.84rem;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .note-textarea {
+      width: 100%;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      padding: 10px;
+      font-family: inherit;
+      font-size: 0.88rem;
+      resize: vertical;
+      min-height: 70px;
+    }
+    .note-textarea:focus {
+      border-color: var(--secondary);
+      outline: none;
+      ring: 2px solid #ccfbf1;
+    }
+    .quick-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+    .chip {
+      font-size: 0.75rem;
+      padding: 3px 8px;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.15s ease;
+    }
+    .chip:hover {
+      background: #e2e8f0;
+    }
+
+    @media print {
+      body { background: #fff; color: #000; padding-bottom: 0; }
+      header, .nav-bar, .header-controls, .btn, .timer-box, .notes-toggle-floating, .notes-drawer { display: none !important; }
+      .section-view { display: block !important; margin-bottom: 40px; page-break-after: always; }
+      .card { box-shadow: none; border: 1px solid #ccc; }
+      .teacher-panel { display: block !important; border-color: #000; }
+      #notesSectionInSummary { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Floating 1:1 Session Notes Button -->
+<div class="notes-toggle-floating" onclick="toggleNotesDrawer()">
+  📝 1:1 Live Notes <span id="notesSavedIndicator" style="font-size:0.75rem; opacity:0.8;">(Auto-Saved)</span>
+</div>
+
+<!-- 1:1 Online Session Notes Side Drawer -->
+<aside class="notes-drawer" id="notesDrawer">
+  <div class="notes-header">
+    <h3>📝 1:1 Session Notes &amp; Feedback</h3>
+    <button class="btn btn-outline-white btn-sm" onclick="toggleNotesDrawer()">✕ Close</button>
+  </div>
+  <div class="notes-body">
+    <div class="note-field">
+      <label>Student Name &amp; Date
+        <span style="font-weight:normal; font-size:0.75rem; color:#64748b;">Online Record</span>
+      </label>
+      <input type="text" class="input-text" id="sessionStudentName" placeholder="Student Name (e.g., Deniz A.)" oninput="saveNotes()">
+      <input type="text" class="input-text" id="sessionDate" placeholder="Date / Time (e.g., 8 Sept 2026 20:00)" oninput="saveNotes()">
+    </div>
+
+    <div class="note-field">
+      <label>Session Goal &amp; Today's Focus</label>
+      <input type="text" class="input-text" id="sessionGoal" placeholder="Master 'had + V3' and distinguish sequence" oninput="saveNotes()">
+      <div class="quick-chips">
+        <span class="chip" onclick="addChip('sessionGoal', 'Pronouncing V3 participles cleanly')">+ Participles</span>
+        <span class="chip" onclick="addChip('sessionGoal', 'Stop dropping had in past sequence')">+ Prevent dropping had</span>
+        <span class="chip" onclick="addChip('sessionGoal', 'Fluency in S2 60s monologue')">+ S2 Fluency</span>
+      </div>
+    </div>
+
+    <div class="note-field">
+      <label>Live Pronunciation &amp; Participle Notes</label>
+      <textarea class="note-textarea" id="sessionPronunciationNotes" placeholder="e.g. Practise: eaten (/i:tn/), bought (/bɔ:t/), left..." oninput="saveNotes()"></textarea>
+      <div class="quick-chips">
+        <span class="chip" onclick="addChip('sessionPronunciationNotes', 'eaten (/i:tn/)')">+ eaten</span>
+        <span class="chip" onclick="addChip('sessionPronunciationNotes', 'bought (/bɔ:t/)')">+ bought</span>
+        <span class="chip" onclick="addChip('sessionPronunciationNotes', 'saw (/sɔ:/) vs seen (/si:n/)')">+ saw/seen</span>
+      </div>
+    </div>
+
+    <div class="note-field">
+      <label>Live Delayed Error Correction (DEC)</label>
+      <textarea class="note-textarea" id="sessionDecNotes" placeholder="Record learner slip-ups during speaking tasks S1-S4 for post-task review..." oninput="saveNotes()"></textarea>
+      <div class="quick-chips">
+        <span class="chip" onclick="addChip('sessionDecNotes', '❌ had lose ➔ ✅ had lost')">+ had lose</span>
+        <span class="chip" onclick="addChip('sessionDecNotes', '❌ the ferry left ➔ ✅ had left')">+ dropped had</span>
+        <span class="chip" onclick="addChip('sessionDecNotes', '❌ we have finished ➔ ✅ had finished')">+ have ➔ had</span>
+      </div>
+    </div>
+
+    <div class="note-field">
+      <label>Homework &amp; Next Session Action Plan</label>
+      <textarea class="note-textarea" id="sessionHomeworkNotes" placeholder="e.g., Complete Type 3 sentence rewrites, review 15 core verbs..." oninput="saveNotes()"></textarea>
+    </div>
+  </div>
+  <div class="notes-footer">
+    <button class="btn btn-outline btn-sm" onclick="exportNotesAsText()">📄 Export Text File</button>
+    <button class="btn btn-primary btn-sm" onclick="copyNotesToClipboard()">📋 Copy Summary</button>
+  </div>
+</aside>
+
+<header>
+  <div class="header-container">
+    <div class="header-title">
+      <h1>From Present &amp; Past Simple to Past Perfect (A2)</h1>
+      <p>Interactive 1:1 Live Online Session Package — CEFR A2</p>
+    </div>
+    <div class="header-controls">
+      <button class="btn btn-accent btn-sm" onclick="toggleNotesDrawer()">📝 1:1 Notes Panel</button>
+      <button id="btnTeacherToggle" class="btn btn-outline-white btn-sm teacher-btn-toggle" onclick="toggleTeacherMode()">👩‍🏫 Teacher Mode: OFF</button>
+      <button class="btn btn-outline-white btn-sm" onclick="window.print()">🖨️ Print / PDF</button>
+      <button class="btn btn-outline-white btn-sm" onclick="resetAllProgress()">🔄 Reset Data</button>
+    </div>
+  </div>
+</header>
+
+<nav class="nav-bar">
+  <div class="nav-container">
+    <div class="nav-tab active" onclick="switchTab('partA')">Part A: Review &amp; Speaking</div>
+    <div class="nav-tab" onclick="switchTab('partB')">Part B: Past Perfect Grammar</div>
+    <div class="nav-tab" onclick="switchTab('partC')">Part C: Graded Exercises</div>
+    <div class="nav-tab" onclick="switchTab('summary')">Diagnostic Dashboard &amp; Notes</div>
+  </div>
+</nav>
+
+<main class="main-container">
+  <!-- PART A -->
+  <section id="partA" class="section-view active">
+    <div class="card">
+      <div class="card-title">
+        <span>A1. Present Simple Summary (Habits &amp; Routines)</span>
+        <span class="badge badge-primary">Review</span>
+      </div>
+      <div class="rule-box">
+        💡 <strong>Meaning Rule:</strong> We use the present simple for daily routines, habits, and things that are always true.
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Form</th><th>Subject &amp; Structure</th><th>Core Example (Verb: <em>watch</em>)</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Affirmative (+)</strong></td>
+              <td>I / You / We / They + <strong>V1</strong><br>He / She / It + <strong>V1 + -s/-es</strong></td>
+              <td><em>Emre <strong>watches</strong> football every Saturday.</em><br><em>We <strong>watch</strong> films on Sunday.</em></td>
+            </tr>
+            <tr>
+              <td><strong>Negative (−)</strong></td>
+              <td>I / You / We / They + <strong>don't</strong> + V1<br>He / She / It + <strong>doesn't</strong> + V1</td>
+              <td><em>Emre <strong>doesn't watch</strong> tennis on Saturday.</em><br><em>We <strong>don't watch</strong> TV in the morning.</em></td>
+            </tr>
+            <tr>
+              <td><strong>Question (?)</strong></td>
+              <td><strong>Do</strong> / <strong>Does</strong> + Subject + V1?</td>
+              <td><em>— <strong>Does</strong> Emre <strong>watch</strong> football every Saturday?<br>— Yes, he does. / No, he doesn't.</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Signal Words:</strong> <em>always, usually, sometimes, never, every day, on Sundays</em>.</p>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>A2. Past Simple Summary &amp; The 15 Core Verbs</span>
+        <span class="badge badge-primary">Review + Core Verbs</span>
+      </div>
+      <div class="rule-box">
+        💡 <strong>Meaning Rule:</strong> We use the past simple for finished actions that happened at a specific time in the past.
+      </div>
+      <p style="margin-bottom: 12px;">Look at the 3 columns. You already know <strong>V2</strong>. Today you will meet <strong>V3</strong> with a partner: <strong>had</strong>.</p>
+      
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>#</th><th>Base Form (V1)</th><th>Past Simple (V2)</th><th>Past Participle (V3)</th><th>Category</th><th>Turkish Meaning</th></tr>
+          </thead>
+          <tbody id="coreVerbsTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>A3. Tense Sort Checkpoint</span>
+        <span class="badge badge-secondary">Quick Check</span>
+      </div>
+      <p class="card-subtitle">Decide if each sentence is PRESENT or PAST. Check the signal word.</p>
+      <div id="checkpointA3Container"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>Speaking Activation Tasks (S1 – S4)</span>
+        <span class="badge badge-primary">Structured Frames</span>
+      </div>
+      
+      <!-- S1 -->
+      <div class="speaking-card">
+        <h4>S1 — Warm-up: Daily Routines &amp; Frequency (Present Simple)</h4>
+        <div class="speaking-meta">
+          <span class="badge">👥 1:1 Live Q&amp;A</span>
+          <span class="badge">⏱️ 4 Minutes</span>
+          <span class="badge">🎯 Focus: Adverbs of frequency + 3rd person -s</span>
+        </div>
+        <div class="timer-box">
+          <div class="timer-display" id="timerS1">04:00</div>
+          <button class="btn btn-primary btn-sm" onclick="toggleTimer('S1', 240)">Start / Pause Timer</button>
+          <button class="btn btn-outline btn-sm" onclick="resetTimer('S1', 240)">Reset</button>
+        </div>
+        <div class="frame-box">
+          <p style="font-weight:700; margin-bottom:8px;">Mandatory Language Starters (Click to reveal step by step):</p>
+          <button class="btn btn-outline btn-sm" style="margin-bottom:10px;" onclick="revealNextFrame('s1')">Show Next Starter ➕</button>
+          <div class="frame-item revealed" id="s1_frame_0"><strong>Frame 1:</strong> "How often do you [ eat breakfast / do sports / play football / watch films ]?"</div>
+          <div class="frame-item" id="s1_frame_1"><strong>Frame 2:</strong> "I always / usually / sometimes [ eat / play / watch ] ..., but I never ..."</div>
+          <div class="frame-item" id="s1_frame_2"><strong>Frame 3:</strong> "Every day, my friend [ eats / leaves / gets ] ... at [ time ]."</div>
+        </div>
+        <div class="checklist">
+          <strong>Self-Checklist:</strong>
+          <label><input type="checkbox"> 1. I used an adverb of frequency (always, usually, sometimes, never).</label>
+          <label><input type="checkbox"> 2. I pronounced -s for third person (he eats, she leaves).</label>
+          <label><input type="checkbox"> 3. I asked a full question starting with 'How often do you...'</label>
+        </div>
+      </div>
+
+      <!-- S2 -->
+      <div class="speaking-card">
+        <h4>S2 — 60-Second Monologue: "My Yesterday Timeline" (Past Simple)</h4>
+        <div class="speaking-meta">
+          <span class="badge">👤 Student Monologue + Teacher Listening</span>
+          <span class="badge">⏱️ 3 Minutes (1m prep + 1m monologue)</span>
+          <span class="badge">🎯 Focus: Fluency with V2 past verbs</span>
+        </div>
+        <div class="timer-box">
+          <div class="timer-display" id="timerS2">01:00</div>
+          <button class="btn btn-primary btn-sm" onclick="toggleTimer('S2', 60)">Start 60s Monologue</button>
+          <button class="btn btn-outline btn-sm" onclick="resetTimer('S2', 60)">Reset</button>
+        </div>
+        <div class="frame-box">
+          <p style="font-weight:700; margin-bottom:8px;">Your Sequence Starters:</p>
+          <button class="btn btn-outline btn-sm" style="margin-bottom:10px;" onclick="revealNextFrame('s2')">Show Next Starter ➕</button>
+          <div class="frame-item revealed" id="s2_frame_0"><strong>Morning:</strong> "Yesterday morning, I <strong>got up</strong> at ... and I <strong>made</strong> breakfast."</div>
+          <div class="frame-item" id="s2_frame_1"><strong>Travel:</strong> "Then I <strong>left</strong> home and I <strong>took</strong> the bus to ..."</div>
+          <div class="frame-item" id="s2_frame_2"><strong>Afternoon:</strong> "In the afternoon, I <strong>saw</strong> my friend and we <strong>bought</strong> ..."</div>
+          <div class="frame-item" id="s2_frame_3"><strong>Evening:</strong> "At night, I <strong>finished</strong> my work and <strong>watched</strong> a film."</div>
+        </div>
+        <p style="font-size:0.88rem; color:#475569;"><strong>Teacher Live Monitor:</strong> Note the verbs heard: [got] [made] [ate] [left] [took] [went] [bought] [saw] [did] [watched].</p>
+      </div>
+
+      <!-- S3 -->
+      <div class="speaking-card">
+        <h4>S3 — Mixed-Tense Interview Grid: "Find Someone Who..."</h4>
+        <div class="speaking-meta">
+          <span class="badge">👥 1:1 Live Q&amp;A Interview</span>
+          <span class="badge">⏱️ 6 Minutes</span>
+          <span class="badge">🎯 Focus: Do you...? vs. Did you...?</span>
+        </div>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr><th>Target Prompt</th><th>Question Frame</th><th>Tense</th><th>Partner / Teacher Response</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Eat breakfast before 8:00</td><td><em>"<strong>Do you usually eat</strong> breakfast before 8:00?"</em></td><td>Present Simple</td><td><input class="input-text" style="margin:0;" placeholder="Response..."></td></tr>
+              <tr><td>Eat dinner with family yesterday</td><td><em>"<strong>Did you eat</strong> dinner with your family yesterday?"</em></td><td>Past Simple</td><td><input class="input-text" style="margin:0;" placeholder="Response..."></td></tr>
+              <tr><td>Buy things at the market weekly</td><td><em>"<strong>Do you buy</strong> things at the market every week?"</em></td><td>Present Simple</td><td><input class="input-text" style="margin:0;" placeholder="Response..."></td></tr>
+              <tr><td>Buy clothes last week</td><td><em>"<strong>Did you buy</strong> clothes or shoes last week?"</em></td><td>Past Simple</td><td><input class="input-text" style="margin:0;" placeholder="Response..."></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- S4 -->
+      <div class="speaking-card" style="border-color: #f59e0b; background: #fffdf5;">
+        <h4>S4 — THE BRIDGE TASK: "The Bad Day" (The Lead-in to Past Perfect)</h4>
+        <div class="speaking-meta">
+          <span class="badge" style="background:#fef3c7; color:#92400e;">⚠️ Mystery Problem Task</span>
+          <span class="badge">👥 1:1 Interaction</span>
+          <span class="badge">⏱️ 5 Minutes</span>
+        </div>
+        <p style="margin-bottom:12px;">Tell the story of Aylin at Kadıköy ferry station using <strong>Past Simple only</strong>:</p>
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:10px; margin-bottom:14px;">
+          <div style="padding:10px; background:#fff; border:1px solid #fde68a; border-radius:6px;"><strong>Card 1:</strong> Aylin woke up late and ran.</div>
+          <div style="padding:10px; background:#fff; border:1px solid #fde68a; border-radius:6px;"><strong>Card 2:</strong> The ferry departed (left).</div>
+          <div style="padding:10px; background:#fff; border:1px solid #fde68a; border-radius:6px;"><strong>Card 3:</strong> Aylin arrived at gate at 8:15.</div>
+          <div style="padding:10px; background:#fff; border:1px solid #fde68a; border-radius:6px;"><strong>Card 4:</strong> Aylin lost her travel card.</div>
+        </div>
+        <div class="frame-box" style="background:#fff; border-color:#fde68a;">
+          <p><strong>Try telling it:</strong> <em>"Aylin arrived at the station and the ferry left. She lost her card..."</em></p>
+          <div style="margin-top:10px; font-weight:700; color:#b45309;">
+            ❓ The Problem: Did Aylin catch the ferry? Or was it already gone when she arrived? If you only use Past Simple, nobody knows what happened first!
+          </div>
+        </div>
+        <div style="text-align:right;">
+          <button class="btn btn-primary btn-sm" onclick="switchTab('partB')">Go to Part B to Solve This Mystery! ➡️</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART B -->
+  <section id="partB" class="section-view">
+    <div class="card">
+      <div class="card-title">
+        <span>B1. The Hook: Solving Aylin's Bad Day</span>
+        <span class="badge badge-primary">The Solution</span>
+      </div>
+      <p style="margin-bottom:12px;">In S4, our sentence was ambiguous:</p>
+      <div style="padding:12px; background:#fee2e2; border-left:4px solid #ef4444; border-radius:0 6px 6px 0; margin-bottom:12px;">
+        ❌ <em>"When Aylin arrived at the station, the ferry <strong>left</strong>."</em> <br>
+        <span style="font-size:0.88rem; color:#7f1d1d;">(Ambiguous: Did she see it? Did she catch it? We don't know!)</span>
+      </div>
+      <div style="padding:12px; background:#dcfce7; border-left:4px solid #22c55e; border-radius:0 6px 6px 0; margin-bottom:16px;">
+        ✅ <em>"When Aylin arrived at the station, the ferry <strong>had left</strong>."</em><br>
+        <span style="font-size:0.88rem; color:#14532d;">(Crystal clear: The ferry left at 8:10. Aylin arrived at 8:15. The departure happened FIRST.)</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>B2. Plain English Meaning Rule &amp; Timeline</span>
+        <span class="badge badge-secondary">Core Grammar</span>
+      </div>
+      <div class="rule-box">
+        💡 <strong>Plain-English Rule:</strong> We use the past perfect (<strong>had + past participle [V3]</strong>) to talk about an action that happened <strong>before</strong> another action in the past.
+      </div>
+      
+      <div class="timeline-container">
+        <div style="text-align:center; margin-bottom:12px; font-weight:700; color:#94a3b8; text-transform:uppercase; font-size:0.8rem; letter-spacing:0.05em;">
+          The Universal English Past Timeline
+        </div>
+        <div class="timeline-track">
+          <div class="timeline-node earlier">
+            <div class="tense-tag" style="color:#7dd3fc;">1. EARLIER PAST</div>
+            <div class="tense-content"><strong>PAST PERFECT</strong><br>(had + V3)<br><em>"The ferry had left"</em><br><small>(8:10 AM)</small></div>
+          </div>
+          <div style="color:#64748b; font-size:1.5rem; z-index:2;">➔</div>
+          <div class="timeline-node later">
+            <div class="tense-tag" style="color:#fcd34d;">2. LATER PAST</div>
+            <div class="tense-content"><strong>PAST SIMPLE</strong><br>(V2)<br><em>"Aylin arrived"</em><br><small>(8:15 AM)</small></div>
+          </div>
+          <div style="color:#64748b; font-size:1.5rem; z-index:2;">➔</div>
+          <div class="timeline-node now">
+            <div class="tense-tag" style="color:#6ee7b7;">NOW</div>
+            <div class="tense-content">Present Moment</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>B3. Form Transformation Table</span>
+        <span class="badge badge-primary">Form</span>
+      </div>
+      <p style="margin-bottom:12px;">Notice: <strong>had</strong> never changes! It is the same for <em>I, you, he, she, it, we, they</em>.</p>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Sentence Type</th><th>Full Form</th><th>Contraction</th><th>Negative Form</th><th>Question Form</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>I / You / We / They</strong></td>
+              <td><em>I <strong>had left</strong></em></td>
+              <td><em>I'<strong>d left</strong></em></td>
+              <td><em>I <strong>had not left</strong> (hadn't)</em></td>
+              <td><em><strong>Had</strong> you <strong>left</strong>?</em></td>
+            </tr>
+            <tr>
+              <td><strong>He / She / It</strong></td>
+              <td><em>She <strong>had left</strong></em></td>
+              <td><em>She'<strong>d left</strong></em></td>
+              <td><em>She <strong>had not left</strong> (hadn't)</em></td>
+              <td><em><strong>Had</strong> she <strong>left</strong>?</em></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>B4. Signal Words Box</span>
+        <span class="badge badge-secondary">Connectors</span>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Signal Word</th><th>Function / Meaning</th><th>Example Sentence (Past Perfect in Bold)</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>already</strong></td><td>happened sooner than expected</td><td>When I got to the cinema, the film <strong>had already started</strong>.</td></tr>
+            <tr><td><strong>just</strong></td><td>happened a very short time before</td><td>Emre <strong>had just finished</strong> tea when the bus arrived.</td></tr>
+            <tr><td><strong>never</strong></td><td>zero experience before that past point</td><td>Before 2022, Canan <strong>had never seen</strong> Istanbul.</td></tr>
+            <tr><td><strong>before</strong></td><td>introduces the later event</td><td>Burak <strong>had bought</strong> a ticket before he got on the bus.</td></tr>
+            <tr><td><strong>after</strong></td><td>introduces the earlier event</td><td>After we <strong>had eaten</strong> dinner, we watched TV.</td></tr>
+            <tr><td><strong>by the time</strong></td><td>at or before that point</td><td>By the time I reached home, my family <strong>had gone</strong> to bed.</td></tr>
+            <tr><td><strong>because</strong></td><td>gives the earlier reason/cause</td><td>Selin was sad because she <strong>had lost</strong> her keys.</td></tr>
+            <tr><td><strong>when</strong></td><td>connects two past moments</td><td>When they arrived, the store <strong>had closed</strong>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>B5. Minimal Pairs: How Grammar Changes the Story</span>
+        <span class="badge badge-primary">Meaning Contrast</span>
+      </div>
+      <div style="display:grid; gap:16px;">
+        <div style="padding:14px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;">
+          <p><strong>Pair 1: The Coffee</strong></p>
+          <p>• <em>When I arrived, Deniz <strong>made</strong> coffee.</em> ➔ I arrived first. Then Deniz made coffee.</p>
+          <p>• <em>When I arrived, Deniz <strong>had made</strong> coffee.</em> ➔ Deniz made coffee first. A warm cup was ready for me!</p>
+        </div>
+        <div style="padding:14px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;">
+          <p><strong>Pair 2: The Classroom</strong></p>
+          <p>• <em>When the class finished, Murat <strong>left</strong>.</em> ➔ The bell rang, and Murat walked out.</p>
+          <p>• <em>When the class finished, Murat <strong>had left</strong>.</em> ➔ Murat walked out earlier before the bell rang.</p>
+        </div>
+        <div style="padding:14px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;">
+          <p><strong>Pair 3: The Shopping</strong></p>
+          <p>• <em>I <strong>bought</strong> the coat when I saw the price.</em> ➔ I saw the price tag, liked it, and bought it.</p>
+          <p>• <em>I <strong>had bought</strong> the coat when I saw the sale flyer.</em> ➔ I bought it earlier at full price; later saw the sale.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>B6. Common Mistakes &amp; Turkish L1 Interference Guide</span>
+        <span class="badge" style="background:#fee2e2; color:#991b1b;">Alerts</span>
+      </div>
+      <div style="display:grid; gap:14px;">
+        <div style="padding:14px; background:#fff; border:1px solid #fca5a5; border-radius:6px;">
+          <p style="color:#b91c1c; font-weight:700;">1. ❌ Dropping 'had': "When I got home, my brother went to bed."</p>
+          <p style="color:#15803d; font-weight:700;">✅ "When I got home, my brother had gone to bed."</p>
+          <div class="l1-box">
+            🇹🇷 <strong>Turkish Interference Note:</strong> Turkish marks past time with <em>-di</em> for both actions (e.g. <em>"Eve vardığımda kardeşim uyumuştu / uyudu"</em>). Turkish learners frequently forget to use <strong>had</strong>. Error Tag: <code>[F]</code>.
+          </div>
+        </div>
+        <div style="padding:14px; background:#fff; border:1px solid #fca5a5; border-radius:6px;">
+          <p style="color:#b91c1c; font-weight:700;">2. ❌ Wrong Participle: "Selin was sad because she had lose her ticket."</p>
+          <p style="color:#15803d; font-weight:700;">✅ "Selin was sad because she had lost her ticket."</p>
+          <p style="font-size:0.9rem; color:#475569;">Rule: You must always use the Past Participle (V3) after had, never the base form. Error Tag: <code>[P]</code>.</p>
+        </div>
+        <div style="padding:14px; background:#fff; border:1px solid #fca5a5; border-radius:6px;">
+          <p style="color:#b91c1c; font-weight:700;">3. ❌ 'have/has' instead of 'had': "Before the film began, we have bought our food."</p>
+          <p style="color:#15803d; font-weight:700;">✅ "Before the film began, we had bought our food."</p>
+          <p style="font-size:0.9rem; color:#475569;">Rule: The auxiliary for past perfect is always <strong>had</strong>, never <em>have/has</em>. Error Tag: <code>[F]</code>.</p>
+        </div>
+        <div style="padding:14px; background:#fff; border:1px solid #fca5a5; border-radius:6px;">
+          <p style="color:#b91c1c; font-weight:700;">4. ❌ Reversing the Sequence: "After the bus arrived, we had taken our bags."</p>
+          <p style="color:#15803d; font-weight:700;">✅ "After we had taken our bags, the bus arrived."</p>
+          <p style="font-size:0.9rem; color:#475569;">Rule: The earlier event takes past perfect; the later event takes past simple. Error Tag: <code>[S]</code>.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">
+        <span>B7. Participle Reference (15 Core Verbs with V3 Highlighted)</span>
+        <span class="badge badge-primary">Memory Reference</span>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr><th>Base (V1)</th><th>Past Simple (V2)</th><th class="v3-highlight">Past Participle (V3)</th><th>Category</th></tr>
+          </thead>
+          <tbody id="participleTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PART C -->
+  <section id="partC" class="section-view">
+    <!-- Type 0 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 0 — Review Checkpoint: Present Simple vs. Past Simple</span>
+        <span class="badge badge-primary">8 Items</span>
+      </div>
+      <p class="card-subtitle">Confirm your foundation before stacking new grammar.</p>
+      <div id="exercise_type0_container"></div>
+      <div id="type0_warning" style="display:none; padding:12px; background:#fee2e2; border-radius:6px; margin-top:14px; color:#991b1b;">
+        ⚠️ <strong>Review Alert:</strong> You had 2 or more review errors [R]. Please <a href="#" onclick="switchTab('partA'); return false;" style="color:#dc2626; font-weight:700;">go back to Part A</a> and review signal words before continuing!
+      </div>
+    </div>
+
+    <!-- Type 1 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 1 — Form Drill: Supply 'had + V3'</span>
+        <span class="badge badge-primary">8 Items</span>
+      </div>
+      <p class="card-subtitle">Complete the sentences with the correct past perfect form (had + past participle).</p>
+      <div id="exercise_type1_container"></div>
+    </div>
+
+    <!-- Type 2 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 2 — Choose the Correct Form: Past Simple vs. Past Perfect</span>
+        <span class="badge badge-primary">8 Items</span>
+      </div>
+      <p class="card-subtitle">Select the correct option (A, B, C, or D) based on the order of events.</p>
+      <div id="exercise_type2_container"></div>
+    </div>
+
+    <!-- Type 3 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 3 — Sentence Combination Rewrites</span>
+        <span class="badge badge-primary">8 Items</span>
+      </div>
+      <p class="card-subtitle">Combine the two events using the connector. Put the earlier action in Past Perfect.</p>
+      <div id="exercise_type3_container"></div>
+    </div>
+
+    <!-- Type 4 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 4 — Find and Fix the Mistake</span>
+        <span class="badge badge-primary">8 Items</span>
+      </div>
+      <p class="card-subtitle">Each sentence contains exactly one error. Type the corrected sentence.</p>
+      <div id="exercise_type4_container"></div>
+    </div>
+
+    <!-- Type 5 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 5 — Reading &amp; Grammar Noticing Text</span>
+        <span class="badge badge-secondary">82 Words</span>
+      </div>
+      <p class="card-subtitle">Read the story of Mert's busy morning in Istanbul. Notice how past perfect shows earlier events.</p>
+      
+      <div class="noticing-text">
+        "Yesterday, Mert had a very busy morning. Before he left his apartment, he <span style="background:#fef08a; font-weight:700;">had made</span> breakfast and he <span style="background:#fef08a; font-weight:700;">had eaten</span> a sandwich. When he arrived at the bus stop, his usual bus <span style="background:#fef08a; font-weight:700;">had already gone</span>. Luckily, he met his friend Can. Can <span style="background:#fef08a; font-weight:700;">had bought</span> two train tickets because he <span style="background:#fef08a; font-weight:700;">had seen</span> the heavy traffic earlier. By nine o'clock, they <span style="background:#fef08a; font-weight:700;">had gotten</span> to the office safely. Mert smiled because he was on time."
+      </div>
+
+      <div style="margin-top:16px;">
+        <h4 style="margin-bottom:12px;">Comprehension Questions:</h4>
+        <div id="comprehensionQuestionsContainer"></div>
+      </div>
+    </div>
+
+    <!-- Type 6 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 6 — Guided Production (Personal Application)</span>
+        <span class="badge badge-primary">Sentence Stems</span>
+      </div>
+      <p class="card-subtitle">Complete these sentences about your own life using <strong>had + V3</strong> from our 15 core verbs.</p>
+      <div style="display:grid; gap:14px; margin-bottom:16px;">
+        <div>
+          <label style="font-weight:600;">1. By the time I was 10 years old, I had...</label>
+          <input class="input-text" placeholder="e.g. played football / seen the sea / gone to school...">
+        </div>
+        <div>
+          <label style="font-weight:600;">2. Before I left home this morning, I had already...</label>
+          <input class="input-text" placeholder="e.g. eaten breakfast / made tea / taken my bag...">
+        </div>
+        <div>
+          <label style="font-weight:600;">3. Yesterday evening, I was tired because I had...</label>
+          <input class="input-text" placeholder="e.g. done sports / worked hard / played tennis...">
+        </div>
+        <div>
+          <label style="font-weight:600;">4. When I arrived at school / work today, my friend had...</label>
+          <input class="input-text" placeholder="e.g. already come / bought a coffee / left...">
+        </div>
+      </div>
+      <div style="padding:14px; background:#f1f5f9; border-radius:6px;">
+        <strong>Teacher Model Answer:</strong>
+        <p style="font-style:italic; margin-top:4px;">"Before I left home this morning, I had already eaten breakfast and made a cup of tea. By the time I arrived at work, my colleagues had gotten to their desks. I was happy because I had finished my report yesterday."</p>
+      </div>
+    </div>
+
+    <!-- Type 7 -->
+    <div class="card">
+      <div class="card-title">
+        <span>Type 7 — Post-Grammar Speaking Follow-up: Redo "The Bad Day"</span>
+        <span class="badge badge-primary">Fluency Integration</span>
+      </div>
+      <p class="card-subtitle">Retell Aylin's story in pairs. Now use <strong>had + V3</strong> for the earlier event so there is ZERO ambiguity!</p>
+      <div class="speaking-card" style="border-color:#10b981;">
+        <div class="timer-box">
+          <div class="timer-display" id="timerType7">02:00</div>
+          <button class="btn btn-primary btn-sm" onclick="toggleTimer('Type7', 120)">Start 2m Speaking</button>
+          <button class="btn btn-outline btn-sm" onclick="resetTimer('Type7', 120)">Reset</button>
+        </div>
+        <div class="frame-box" style="background:#ecfdf5; border-color:#a7f3d0;">
+          <p><strong>Master Speaking Frame:</strong></p>
+          <p style="font-size:1rem; margin-top:6px; color:#065f46;">
+            <em>"Aylin had a bad day yesterday. When she arrived at the station at 8:15, the ferry <strong>had already left</strong>. She was very sad because she <strong>had lost</strong> her travel card before she reached the gate. Luckily, after she <strong>had taken</strong> a bus, she got to work."</em>
+          </p>
+        </div>
+        <div class="checklist">
+          <strong>Self-Checklist:</strong>
+          <label><input type="checkbox"> 1. Did I use <strong>had + V3</strong> for the earlier events (had left, had lost, had taken)?</label>
+          <label><input type="checkbox"> 2. Did I use past simple V2 for the later arrival (arrived, reached, got)?</label>
+          <label><input type="checkbox"> 3. Was the story order 100% clear to my partner?</label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY & TEACHER VIEW -->
+  <section id="summary" class="section-view">
+    <div class="card">
+      <div class="card-title">
+        <span>Diagnostic Dashboard &amp; Learner Profile</span>
+        <span class="badge badge-primary">Live Metrics</span>
+      </div>
+      <p class="card-subtitle">Diagnostic categorization of errors based on the 5 error domains.</p>
+      
+      <div class="diag-dashboard">
+        <div class="diag-grid">
+          <div class="diag-metric">
+            <div class="diag-metric-count" id="countTotalDone">0 / 40</div>
+            <div class="diag-metric-label">Completed Items</div>
+          </div>
+          <div class="diag-metric">
+            <div class="diag-metric-count" style="color:var(--tag-f);" id="countTagF">0</div>
+            <div class="diag-metric-label">[F] Form / Had</div>
+          </div>
+          <div class="diag-metric">
+            <div class="diag-metric-count" style="color:var(--tag-p);" id="countTagP">0</div>
+            <div class="diag-metric-label">[P] Participle V3</div>
+          </div>
+          <div class="diag-metric">
+            <div class="diag-metric-count" style="color:var(--tag-s);" id="countTagS">0</div>
+            <div class="diag-metric-label">[S] Sequence</div>
+          </div>
+          <div class="diag-metric">
+            <div class="diag-metric-count" style="color:var(--tag-w);" id="countTagW">0</div>
+            <div class="diag-metric-label">[W] Signal Word</div>
+          </div>
+          <div class="diag-metric">
+            <div class="diag-metric-count" style="color:var(--tag-r);" id="countTagR">0</div>
+            <div class="diag-metric-label">[R] Review Tense</div>
+          </div>
+        </div>
+
+        <div id="targetedStudyTip" style="padding:14px; background:#eff6ff; border-radius:6px; font-size:0.92rem; color:#1e40af;">
+          <strong>Personalized Study Recommendation:</strong> Complete the exercises to generate your diagnostic profile.
+        </div>
+      </div>
+    </div>
+
+    <!-- 1:1 Session Notes Section in Summary -->
+    <div class="card" id="notesSectionInSummary">
+      <div class="card-title">
+        <span>1:1 Session Notes &amp; Student Feedback Record</span>
+        <span class="badge badge-secondary">Shared Record</span>
+      </div>
+      <p class="card-subtitle">Review, edit, and print or copy the notes taken during today's live 1:1 class.</p>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:14px; margin-bottom:14px;">
+        <div style="padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;">
+          <strong>🎯 Today's Goal:</strong>
+          <div id="summaryGoalDisplay" style="margin-top:6px; font-size:0.9rem; color:#334155;">(None recorded)</div>
+        </div>
+        <div style="padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px;">
+          <strong>🗣️ Pronunciation Focus:</strong>
+          <div id="summaryPronunciationDisplay" style="margin-top:6px; font-size:0.9rem; color:#334155;">(None recorded)</div>
+        </div>
+      </div>
+      <div style="padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; margin-bottom:14px;">
+        <strong>📝 Delayed Error Correction (DEC) &amp; Slips:</strong>
+        <div id="summaryDecDisplay" style="margin-top:6px; font-size:0.9rem; color:#334155; white-space:pre-wrap;">(None recorded)</div>
+      </div>
+      <div style="padding:12px; background:#f8fafc; border:1px solid #e2e8f0; border-radius:6px; margin-bottom:14px;">
+        <strong>📚 Homework &amp; Action Plan:</strong>
+        <div id="summaryHomeworkDisplay" style="margin-top:6px; font-size:0.9rem; color:#334155; white-space:pre-wrap;">(None recorded)</div>
+      </div>
+      <div style="display:flex; gap:10px;">
+        <button class="btn btn-outline btn-sm" onclick="toggleNotesDrawer()">✏️ Edit in Drawer</button>
+        <button class="btn btn-outline btn-sm" onclick="copyNotesToClipboard()">📋 Copy Summary</button>
+        <button class="btn btn-primary btn-sm" onclick="exportNotesAsText()">💾 Download Notes File</button>
+      </div>
+    </div>
+
+    <!-- Teacher Answer Key Panel -->
+    <div class="card">
+      <div class="card-title">
+        <span>Teacher Master Answer Key &amp; Explanations</span>
+        <span class="badge badge-secondary">Classroom Projection</span>
+      </div>
+      <div class="teacher-panel">
+        <h4 style="color:#15803d; margin-bottom:12px;">👩‍🏫 Teacher Projection Mode Active</h4>
+        <p style="font-size:0.9rem; margin-bottom:16px;">All correct answers, grammatical rationales, and error tags are displayed below for immediate classroom review.</p>
+        <div id="masterAnswerKeyContent"></div>
+      </div>
+      <div id="teacherOffNotice" style="padding:14px; background:#f8fafc; border-radius:6px; text-align:center; color:#64748b;">
+        Teacher mode is currently <strong>OFF</strong>. Click the '👩‍🏫 Teacher Mode' button in the top navigation bar to project answers.
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+const CONFIG = {
+  theme: 'daily life',
+  feedbackMode: 'diagnostic',
+  l1Context: 'Turkish',
+  numItemsPerType: 8,
+  speakingTasks: 4,
+  speakingRecorder: 'off',
+  answerKey: 'end'
+};
+
+const CORE_VERBS = [{"base": "go", "v2": "went", "v3": "gone", "type": "Irregular", "tr": "gitmek"}, {"base": "eat", "v2": "ate", "v3": "eaten", "type": "Irregular", "tr": "yemek"}, {"base": "see", "v2": "saw", "v3": "seen", "type": "Irregular", "tr": "görmek"}, {"base": "do", "v2": "did", "v3": "done", "type": "Irregular", "tr": "yapmak"}, {"base": "make", "v2": "made", "v3": "made", "type": "Irregular", "tr": "yapmak / hazırlamak"}, {"base": "take", "v2": "took", "v3": "taken", "type": "Irregular", "tr": "almak / götürmek"}, {"base": "leave", "v2": "left", "v3": "left", "type": "Irregular", "tr": "ayrılmak / çıkmak"}, {"base": "lose", "v2": "lost", "v3": "lost", "type": "Irregular", "tr": "kaybetmek"}, {"base": "forget", "v2": "forgot", "v3": "forgotten", "type": "Irregular", "tr": "unutmak"}, {"base": "finish", "v2": "finished", "v3": "finished", "type": "Regular", "tr": "bitirmek"}, {"base": "watch", "v2": "watched", "v3": "watched", "type": "Regular", "tr": "izlemek"}, {"base": "play", "v2": "played", "v3": "played", "type": "Regular", "tr": "oynamak"}, {"base": "buy", "v2": "bought", "v3": "bought", "type": "Irregular", "tr": "satın almak"}, {"base": "come", "v2": "came", "v3": "come", "type": "Irregular", "tr": "gelmek"}, {"base": "get", "v2": "got", "v3": "got", "type": "Irregular", "tr": "varmak / almak"}];
+const A3_DATA = [{"id": "a3_1", "text": "Canan plays tennis with her brother every week.", "tense": "PRESENT", "signal": "every week", "reason": "Routine habit with 3rd person singular -s."}, {"id": "a3_2", "text": "We made fresh coffee two hours ago.", "tense": "PAST", "signal": "two hours ago", "reason": "Completed event at specific past time (V2 made)."}, {"id": "a3_3", "text": "Burak usually leaves home at eight o'clock.", "tense": "PRESENT", "signal": "usually", "reason": "Frequency adverb describing daily morning routine."}, {"id": "a3_4", "text": "They bought food at the market yesterday.", "tense": "PAST", "signal": "yesterday", "reason": "Completed past event with V2 bought."}, {"id": "a3_5", "text": "I never lose my house keys.", "tense": "PRESENT", "signal": "never", "reason": "Permanent fact/habit with adverb never."}, {"id": "a3_6", "text": "Murat saw his old school friend last week.", "tense": "PAST", "signal": "last week", "reason": "Completed past event with V2 saw."}];
+const EXERCISES = {"type0": [{"id": "t0_1", "prompt": "Emre always _____ his homework before dinner.", "options": ["finish", "finishes", "finished", "finishing"], "correct": 1, "answerText": "finishes", "reason": "Routine with always + 3rd person singular (he).", "tag": "R"}, {"id": "t0_2", "prompt": "We _____ a new sofa two days ago.", "options": ["buy", "buys", "bought", "have buy"], "correct": 2, "answerText": "bought", "reason": "Past event with two days ago (V2 bought).", "tag": "R"}, {"id": "t0_3", "prompt": "Burak _____ his house keys yesterday evening.", "options": ["loses", "lost", "lose", "is losing"], "correct": 1, "answerText": "lost", "reason": "Past time with yesterday evening (V2 lost).", "tag": "R"}, {"id": "t0_4", "prompt": "They _____ computer games on Sunday mornings.", "options": ["plays", "played", "play", "are played"], "correct": 2, "answerText": "play", "reason": "Habit on Sundays with plural subject (They).", "tag": "R"}, {"id": "t0_5", "prompt": "Selin _____ to Antalya last summer.", "options": ["goes", "went", "go", "gone"], "correct": 1, "answerText": "went", "reason": "Finished past event with last summer (V2 went).", "tag": "R"}, {"id": "t0_6", "prompt": "Canan _____ meat because she is a vegetarian.", "options": ["didn't eat", "doesn't eat", "don't eat", "not eat"], "correct": 1, "answerText": "doesn't eat", "reason": "Present fact with 3rd person singular (Canan).", "tag": "R"}, {"id": "t0_7", "prompt": "Murat _____ football with his friends two hours ago.", "options": ["plays", "play", "played", "has played"], "correct": 2, "answerText": "played", "reason": "Completed past event with two hours ago (V2 played).", "tag": "R"}, {"id": "t0_8", "prompt": "I usually _____ home at seven o'clock every morning.", "options": ["leave", "leaves", "left", "am leaving"], "correct": 0, "answerText": "leave", "reason": "Daily routine with usually and subject I.", "tag": "R"}], "type1": [{"id": "t1_1", "prompt": "Before 2020, Aylin _____ (never / see) the sea.", "accepted": ["had never seen", "hadn't seen"], "answerText": "had never seen", "reason": "Requires had + never + V3 seen.", "tag": "P"}, {"id": "t1_2", "prompt": "When the teacher arrived, the students _____ (already / do) the test.", "accepted": ["had already done"], "answerText": "had already done", "reason": "Requires had + already + V3 done.", "tag": "P"}, {"id": "t1_3", "prompt": "Burak was tired because he _____ (not / eat) breakfast.", "accepted": ["had not eaten", "hadn't eaten"], "answerText": "had not eaten", "reason": "Negative past perfect requires had not + V3 eaten.", "tag": "P"}, {"id": "t1_4", "prompt": "They were happy because they _____ (buy) the last tickets.", "accepted": ["had bought"], "answerText": "had bought", "reason": "Requires had + V3 bought.", "tag": "F"}, {"id": "t1_5", "prompt": "When we arrived, our friends _____ (already / leave) the party.", "accepted": ["had already left"], "answerText": "had already left", "reason": "Requires had + already + V3 left.", "tag": "F"}, {"id": "t1_6", "prompt": "I looked for my watch, but I _____ (lose) it.", "accepted": ["had lost"], "answerText": "had lost", "reason": "Requires had + V3 lost.", "tag": "P"}, {"id": "t1_7", "prompt": "By seven o'clock, Canan _____ (make) dinner for everyone.", "accepted": ["had made"], "answerText": "had made", "reason": "Requires had + V3 made.", "tag": "F"}, {"id": "t1_8", "prompt": "_____ you _____ (finish) the book before the lesson began?", "accepted": ["had you finished", "had finished"], "answerText": "Had you finished", "reason": "Question form: Had + Subject + V3 finished.", "tag": "F"}], "type2": [{"id": "t2_1", "prompt": "When I got to the cinema, the film _____ .", "options": ["starts", "started", "had started", "has started"], "correct": 2, "answerText": "had started", "reason": "The film started before I got there (earlier past = had + V3).", "tag": "S"}, {"id": "t2_2", "prompt": "Selin was sad because she _____ her phone.", "options": ["loses", "had lost", "lost", "has lost"], "correct": 1, "answerText": "had lost", "reason": "Losing the phone happened first, causing past sadness.", "tag": "S"}, {"id": "t2_3", "prompt": "After we _____ our breakfast, we walked to school.", "options": ["had eaten", "eat", "ate", "have eaten"], "correct": 0, "answerText": "had eaten", "reason": "After introduces the earlier action (had eaten).", "tag": "S"}, {"id": "t2_4", "prompt": "Emre arrived at 9:00, but the bus _____ at 8:50.", "options": ["left", "has left", "leaves", "had left"], "correct": 3, "answerText": "had left", "reason": "8:50 is earlier than 9:00; earlier past requires had left.", "tag": "S"}, {"id": "t2_5", "prompt": "Murat showed me the car that he _____ two days before.", "options": ["had bought", "bought", "buys", "has bought"], "correct": 0, "answerText": "had bought", "reason": "The purchase happened prior to showing the car.", "tag": "S"}, {"id": "t2_6", "prompt": "Canan couldn't open the door because she _____ her key.", "options": ["forgot", "had forgotten", "forgets", "has forgotten"], "correct": 1, "answerText": "had forgotten", "reason": "Forgetting happened earlier at home (had forgotten).", "tag": "P"}, {"id": "t2_7", "prompt": "By the time Deniz called me, I _____ to bed.", "options": ["went", "had gone", "go", "have gone"], "correct": 1, "answerText": "had gone", "reason": "By the time signals completion before the call.", "tag": "W"}, {"id": "t2_8", "prompt": "When we reached the café, our friends _____ their drinks.", "options": ["took", "had taken", "take", "have taken"], "correct": 1, "answerText": "had taken", "reason": "Friends collected drinks before we reached the café.", "tag": "S"}], "type3": [{"id": "t3_1", "prompt": "Action 1: Burak bought the bread. Action 2: Burak came home. (after)", "accepted": ["after burak had bought the bread, he came home.", "after burak had bought the bread he came home.", "burak came home after he had bought the bread."], "answerText": "After Burak had bought the bread, he came home.", "reason": "Buying bread happened first (had bought); coming home later (came).", "tag": "S"}, {"id": "t3_2", "prompt": "Action 1: Aylin finished her work. Action 2: Aylin watched TV. (before)", "accepted": ["aylin had finished her work before she watched tv.", "before she watched tv, aylin had finished her work."], "answerText": "Aylin had finished her work before she watched TV.", "reason": "Finishing happened first (had finished); watching happened second (watched).", "tag": "S"}, {"id": "t3_3", "prompt": "Action 1: The train left the station. Action 2: We got to the platform. (when)", "accepted": ["when we got to the platform, the train had left.", "the train had left when we got to the platform."], "answerText": "When we got to the platform, the train had left.", "reason": "Train left first (had left); got to platform later (got).", "tag": "S"}, {"id": "t3_4", "prompt": "Action 1: Deniz made a cake. Action 2: The guests arrived. (by the time)", "accepted": ["by the time the guests arrived, deniz had made a cake.", "deniz had made a cake by the time the guests arrived."], "answerText": "By the time the guests arrived, Deniz had made a cake.", "reason": "Cake making was completed earlier (had made).", "tag": "W"}, {"id": "t3_5", "prompt": "Action 1: Emre lost his card. Action 2: Emre took a taxi. (because)", "accepted": ["emre took a taxi because he had lost his card.", "emre took a taxi because he had lost his transport card."], "answerText": "Emre took a taxi because he had lost his card.", "reason": "Losing card happened first (had lost); taking taxi was later (took).", "tag": "S"}, {"id": "t3_6", "prompt": "Action 1: They played football. Action 2: They ate dinner. (after)", "accepted": ["after they had played football, they ate dinner.", "they ate dinner after they had played football."], "answerText": "After they had played football, they ate dinner.", "reason": "Playing football was first (had played); eating was second (ate).", "tag": "S"}, {"id": "t3_7", "prompt": "Action 1: Canan packed her bags. Action 2: Canan left the hotel. (before)", "accepted": ["canan had taken her bags before she left the hotel.", "before she left the hotel, canan had taken her bags."], "answerText": "Canan had taken her bags before she left the hotel.", "reason": "Taking bags was earlier (had taken); leaving was second (left).", "tag": "S"}, {"id": "t3_8", "prompt": "Action 1: The shop closed. Action 2: Murat arrived. (when)", "accepted": ["when murat arrived, the shop had closed.", "the shop had closed when murat arrived."], "answerText": "When Murat arrived, the shop had closed.", "reason": "Shop closed first (had closed); Murat arrived second (arrived).", "tag": "S"}], "type4": [{"id": "t4_1", "prompt": "When I got to the bus stop, the bus left.", "accepted": ["when i got to the bus stop, the bus had left.", "when i got to the bus stop the bus had left."], "answerText": "When I got to the bus stop, the bus had left.", "reason": "Missing auxiliary had. Turkish learners often omit had.", "tag": "F"}, {"id": "t4_2", "prompt": "Burak was sad because he had lose his watch.", "accepted": ["burak was sad because he had lost his watch."], "answerText": "Burak was sad because he had lost his watch.", "reason": "Used V1 lose instead of V3 lost after had.", "tag": "P"}, {"id": "t4_3", "prompt": "Before we went to sleep, we have finished all our homework.", "accepted": ["before we went to sleep, we had finished all our homework."], "answerText": "Before we went to sleep, we had finished all our homework.", "reason": "Used have instead of had for earlier past.", "tag": "F"}, {"id": "t4_4", "prompt": "Aylin arrived at the cinema after the film started.", "accepted": ["aylin arrived at the cinema after the film had started."], "answerText": "Aylin arrived at the cinema after the film had started.", "reason": "The earlier event after after requires past perfect had started.", "tag": "S"}, {"id": "t4_5", "prompt": "By eight o'clock yesterday, Canan had make fresh bread.", "accepted": ["by eight o'clock yesterday, canan had made fresh bread."], "answerText": "By eight o'clock yesterday, Canan had made fresh bread.", "reason": "Used V1 make instead of V3 made.", "tag": "P"}, {"id": "t4_6", "prompt": "They hadn't ate breakfast before they took the morning bus.", "accepted": ["they hadn't eaten breakfast before they took the morning bus.", "they had not eaten breakfast before they took the morning bus."], "answerText": "They hadn't eaten breakfast before they took the morning bus.", "reason": "Used V2 ate instead of V3 eaten.", "tag": "P"}, {"id": "t4_7", "prompt": "Emre always finish his work at five o'clock every day.", "accepted": ["emre always finishes his work at five o'clock every day."], "answerText": "Emre always finishes his work at five o'clock every day.", "reason": "Review error: 3rd person singular requires finishes (-es).", "tag": "R"}, {"id": "t4_8", "prompt": "Did you bought bread at the supermarket yesterday?", "accepted": ["did you buy bread at the supermarket yesterday?"], "answerText": "Did you buy bread at the supermarket yesterday?", "reason": "Review error: After Did, the verb returns to base form buy.", "tag": "R"}]};
+const COMPREHENSION_DATA = [{"q": "Did Mert eat breakfast at home or at the bus stop?", "a": "He ate breakfast at home (before he left his apartment, he had eaten a sandwich)."}, {"q": "What happened before Mert arrived at the bus stop?", "a": "His usual bus had already gone."}, {"q": "Why did Can buy two train tickets?", "a": "Because he had seen the heavy traffic earlier."}, {"q": "Where were the two friends by nine o'clock?", "a": "They had gotten to the office safely."}];
+
+let state = {
+  answers: {},
+  tagCounts: { F: 0, P: 0, S: 0, W: 0, R: 0 },
+  teacherMode: false,
+  notes: {
+    studentName: '',
+    date: '',
+    goal: '',
+    pronunciation: '',
+    dec: '',
+    homework: ''
+  }
+};
+
+function saveState() {
+  localStorage.setItem('esl_past_perfect_state', JSON.stringify(state));
+  updateDashboard();
+  updateSummaryNotesDisplay();
+}
+
+function loadState() {
+  const saved = localStorage.getItem('esl_past_perfect_state');
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      state = { ...state, ...parsed };
+      if (!state.notes) {
+        state.notes = { studentName: '', date: '', goal: '', pronunciation: '', dec: '', homework: '' };
+      }
+      if (state.teacherMode) {
+        document.body.classList.add('teacher-mode');
+        document.getElementById('btnTeacherToggle').innerHTML = '👩‍🏫 Teacher Mode: ON';
+        document.getElementById('teacherOffNotice').style.display = 'none';
+      }
+      loadNotesIntoUI();
+    } catch(e) {
+      console.error('Error loading state', e);
+    }
+  }
+}
+
+function resetAllProgress() {
+  if (confirm('Are you sure you want to reset all your progress, answers, errors, and session notes?')) {
+    localStorage.removeItem('esl_past_perfect_state');
+    location.reload();
+  }
+}
+
+/* ================= 1:1 LIVE SESSION NOTES FEATURES ================= */
+function toggleNotesDrawer() {
+  const drawer = document.getElementById('notesDrawer');
+  if (drawer) {
+    drawer.classList.toggle('open');
+  }
+}
+
+function saveNotes() {
+  state.notes.studentName = document.getElementById('sessionStudentName').value;
+  state.notes.date = document.getElementById('sessionDate').value;
+  state.notes.goal = document.getElementById('sessionGoal').value;
+  state.notes.pronunciation = document.getElementById('sessionPronunciationNotes').value;
+  state.notes.dec = document.getElementById('sessionDecNotes').value;
+  state.notes.homework = document.getElementById('sessionHomeworkNotes').value;
+
+  const ind = document.getElementById('notesSavedIndicator');
+  if (ind) {
+    ind.innerText = '(Saved ✓)';
+    setTimeout(() => { ind.innerText = '(Auto-Saved)'; }, 1200);
+  }
+  saveState();
+}
+
+function loadNotesIntoUI() {
+  if (!state.notes) return;
+  const n = state.notes;
+  if (document.getElementById('sessionStudentName')) document.getElementById('sessionStudentName').value = n.studentName || '';
+  if (document.getElementById('sessionDate')) document.getElementById('sessionDate').value = n.date || '';
+  if (document.getElementById('sessionGoal')) document.getElementById('sessionGoal').value = n.goal || '';
+  if (document.getElementById('sessionPronunciationNotes')) document.getElementById('sessionPronunciationNotes').value = n.pronunciation || '';
+  if (document.getElementById('sessionDecNotes')) document.getElementById('sessionDecNotes').value = n.dec || '';
+  if (document.getElementById('sessionHomeworkNotes')) document.getElementById('sessionHomeworkNotes').value = n.homework || '';
+  updateSummaryNotesDisplay();
+}
+
+function updateSummaryNotesDisplay() {
+  const n = state.notes || {};
+  const goalEl = document.getElementById('summaryGoalDisplay');
+  const pronEl = document.getElementById('summaryPronunciationDisplay');
+  const decEl = document.getElementById('summaryDecDisplay');
+  const hwEl = document.getElementById('summaryHomeworkDisplay');
+
+  if (goalEl) goalEl.innerText = n.goal || '(None recorded)';
+  if (pronEl) pronEl.innerText = n.pronunciation || '(None recorded)';
+  if (decEl) decEl.innerText = n.dec || '(None recorded)';
+  if (hwEl) hwEl.innerText = n.homework || '(None recorded)';
+}
+
+function addChip(targetFieldId, text) {
+  const el = document.getElementById(targetFieldId);
+  if (!el) return;
+  if (el.value.trim().length > 0) {
+    el.value += '\n• ' + text;
+  } else {
+    el.value = '• ' + text;
+  }
+  saveNotes();
+}
+
+function exportNotesAsText() {
+  const n = state.notes || {};
+  const student = n.studentName || 'Student';
+  const date = n.date || new Date().toLocaleDateString();
+  const content = `====================================================
+1:1 ESL LESSON NOTES & FEEDBACK
+Course: From Present & Past Simple to Past Perfect (A2)
+Student: ${student}
+Date: ${date}
+====================================================
+
+1. TODAY'S LESSON GOAL & FOCUS:
+${n.goal || 'General grammar & speaking development'}
+
+2. PRONUNCIATION & PARTICIPLE DRILLS:
+${n.pronunciation || 'Standard pronunciation reviewed.'}
+
+3. DELAYED ERROR CORRECTION (DEC):
+${n.dec || 'Clean speaking accuracy observed.'}
+
+4. HOMEWORK & NEXT STEPS:
+${n.homework || 'Review the 15 core verbs and past perfect exercises.'}
+
+5. DIAGNOSTIC ERROR PROFILE SUMMARY:
+• [F] Form / Had missing: ${state.tagCounts.F || 0}
+• [P] Participle V3 errors: ${state.tagCounts.P || 0}
+• [S] Sequence errors: ${state.tagCounts.S || 0}
+• [W] Signal word errors: ${state.tagCounts.W || 0}
+• [R] Review tense errors: ${state.tagCounts.R || 0}
+
+====================================================
+Generated via ESL Past Perfect Online Learning Service
+`;
+
+  const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+  const link = document.createElement('a');
+  link.href = URL.createObjectURL(blob);
+  link.download = `ESL_1on1_Notes_${student.replace(/\s+/g, '_')}.txt`;
+  link.click();
+}
+
+function copyNotesToClipboard() {
+  const n = state.notes || {};
+  const summary = `📝 1:1 Lesson Summary (${n.studentName || 'Student'}, ${n.date || 'Today'}):
+🎯 Goal: ${n.goal || 'Past Perfect Mastery'}
+🗣️ Pronunciation: ${n.pronunciation || 'N/A'}
+⚡ Corrections: ${n.dec || 'N/A'}
+📚 Homework: ${n.homework || 'Review 15 core verbs'}`;
+
+  navigator.clipboard.writeText(summary).then(() => {
+    alert('Session notes copied to clipboard! You can paste them into Skype, Zoom, or WhatsApp for your student.');
+  }).catch(() => {
+    alert('Please copy manually from the notes drawer.');
+  });
+}
+
+/* ================= NAVIGATION & TABS ================= */
+function switchTab(tabId) {
+  document.querySelectorAll('.section-view').forEach(el => el.classList.remove('active'));
+  document.querySelectorAll('.nav-tab').forEach(el => el.classList.remove('active'));
+  
+  const target = document.getElementById(tabId);
+  if (target) target.classList.add('active');
+  
+  const tabs = { 'partA': 0, 'partB': 1, 'partC': 2, 'summary': 3 };
+  const tabElements = document.querySelectorAll('.nav-tab');
+  if (tabElements[tabs[tabId]]) {
+    tabElements[tabs[tabId]].classList.add('active');
+  }
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function toggleTeacherMode() {
+  state.teacherMode = !state.teacherMode;
+  const btn = document.getElementById('btnTeacherToggle');
+  const notice = document.getElementById('teacherOffNotice');
+  if (state.teacherMode) {
+    document.body.classList.add('teacher-mode');
+    btn.innerHTML = '👩‍🏫 Teacher Mode: ON';
+    notice.style.display = 'none';
+  } else {
+    document.body.classList.remove('teacher-mode');
+    btn.innerHTML = '👩‍🏫 Teacher Mode: OFF';
+    notice.style.display = 'block';
+  }
+  saveState();
+}
+
+function renderCoreVerbs() {
+  const tbody = document.getElementById('coreVerbsTableBody');
+  const tbodyV3 = document.getElementById('participleTableBody');
+  if (!tbody) return;
+
+  tbody.innerHTML = CORE_VERBS.map((v, i) => `
+    <tr>
+      <td>${i + 1}</td>
+      <td><strong>${v.base}</strong></td>
+      <td>${v.v2}</td>
+      <td class="v3-highlight">${v.v3}</td>
+      <td><span class="badge ${v.type === 'Regular' ? 'badge-secondary' : 'badge-primary'}">${v.type}</span></td>
+      <td>${v.tr}</td>
+    </tr>
+  `).join('');
+
+  if (tbodyV3) {
+    tbodyV3.innerHTML = CORE_VERBS.map((v, i) => `
+      <tr>
+        <td><strong>${v.base}</strong></td>
+        <td>${v.v2}</td>
+        <td class="v3-highlight">${v.v3.toUpperCase()}</td>
+        <td>${v.type}</td>
+      </tr>
+    `).join('');
+  }
+}
+
+function renderCheckpointA3() {
+  const container = document.getElementById('checkpointA3Container');
+  if (!container) return;
+  container.innerHTML = A3_DATA.map((item, idx) => `
+    <div class="exercise-item" id="${item.id}">
+      <div class="exercise-prompt">${idx + 1}. "${item.text}"</div>
+      <div style="display:flex; gap:10px; margin-bottom:10px;">
+        <button class="btn btn-outline btn-sm" onclick="checkA3('${item.id}', 'PRESENT')">PRESENT</button>
+        <button class="btn btn-outline btn-sm" onclick="checkA3('${item.id}', 'PAST')">PAST</button>
+      </div>
+      <div class="feedback-box" id="fb_${item.id}"></div>
+    </div>
+  `).join('');
+}
+
+function checkA3(itemId, chosen) {
+  const item = A3_DATA.find(x => x.id === itemId);
+  const fb = document.getElementById('fb_' + itemId);
+  if (!item || !fb) return;
+
+  if (chosen === item.tense) {
+    fb.className = 'feedback-box correct';
+    fb.innerHTML = `✅ Correct! <strong>${item.tense}</strong>. Signal Word: <em>${item.signal}</em>. (${item.reason})`;
+  } else {
+    fb.className = 'feedback-box wrong';
+    fb.innerHTML = `❌ Incorrect. This sentence is <strong>${item.tense}</strong> because of <em>'${item.signal}'</em>. (${item.reason})`;
+  }
+}
+
+function renderType0() {
+  const container = document.getElementById('exercise_type0_container');
+  if (!container) return;
+  container.innerHTML = EXERCISES.type0.map((item, idx) => `
+    <div class="exercise-item" id="item_${item.id}">
+      <div class="exercise-prompt">${idx + 1}. ${item.prompt}</div>
+      <div class="options-grid">
+        ${item.options.map((opt, oIdx) => `
+          <button class="option-btn" onclick="checkMCQ('type0', '${item.id}', ${oIdx})">${String.fromCharCode(65 + oIdx)}) ${opt}</button>
+        `).join('')}
+      </div>
+      <div class="feedback-box" id="fb_${item.id}"></div>
+    </div>
+  `).join('');
+}
+
+function renderType2() {
+  const container = document.getElementById('exercise_type2_container');
+  if (!container) return;
+  container.innerHTML = EXERCISES.type2.map((item, idx) => `
+    <div class="exercise-item" id="item_${item.id}">
+      <div class="exercise-prompt">${idx + 1}. ${item.prompt}</div>
+      <div class="options-grid">
+        ${item.options.map((opt, oIdx) => `
+          <button class="option-btn" onclick="checkMCQ('type2', '${item.id}', ${oIdx})">${String.fromCharCode(65 + oIdx)}) ${opt}</button>
+        `).join('')}
+      </div>
+      <div class="feedback-box" id="fb_${item.id}"></div>
+    </div>
+  `).join('');
+}
+
+function checkMCQ(typeKey, itemId, selectedIdx) {
+  const item = EXERCISES[typeKey].find(x => x.id === itemId);
+  const fb = document.getElementById('fb_' + itemId);
+  const parent = document.getElementById('item_' + itemId);
+  if (!item || !fb || !parent) return;
+
+  const buttons = parent.querySelectorAll('.option-btn');
+  buttons.forEach((b, idx) => {
+    b.classList.remove('selected', 'correct-choice', 'wrong-choice');
+    if (idx === item.correct) b.classList.add('correct-choice');
+    if (idx === selectedIdx && selectedIdx !== item.correct) b.classList.add('wrong-choice');
+  });
+
+  const isCorrect = (selectedIdx === item.correct);
+  recordAnswer(itemId, selectedIdx, isCorrect, item.tag);
+
+  if (isCorrect) {
+    fb.className = 'feedback-box correct';
+    fb.innerHTML = `✅ Correct! <strong>${item.answerText}</strong> — ${item.reason}`;
+  } else {
+    fb.className = 'feedback-box wrong';
+    fb.innerHTML = `<span class="tag-badge tag-${item.tag.toLowerCase()}">[${item.tag}]</span> Correct answer: <strong>${item.options[item.correct]}</strong>.<br>${item.reason}`;
+  }
+  checkReviewAlert();
+}
+
+function renderInputExercise(typeKey, containerId) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  container.innerHTML = EXERCISES[typeKey].map((item, idx) => `
+    <div class="exercise-item" id="item_${item.id}">
+      <div class="exercise-prompt">${idx + 1}. ${item.prompt}</div>
+      <div style="display:flex; gap:10px;">
+        <input class="input-text" id="input_${item.id}" placeholder="Type your answer here...">
+        <button class="btn btn-primary btn-sm" onclick="checkInputAnswer('${typeKey}', '${item.id}')">Check</button>
+      </div>
+      <div class="feedback-box" id="fb_${item.id}"></div>
+    </div>
+  `).join('');
+}
+
+function cleanStr(s) {
+  return s.trim().toLowerCase().replace(/[.,/#!$%^&*;:{}=\-_~()]/g, "").replace(/\s+/g, " ");
+}
+
+function checkInputAnswer(typeKey, itemId) {
+  const item = EXERCISES[typeKey].find(x => x.id === itemId);
+  const input = document.getElementById('input_' + itemId);
+  const fb = document.getElementById('fb_' + itemId);
+  if (!item || !input || !fb) return;
+
+  const val = input.value.trim();
+  const cleanedVal = cleanStr(val);
+  const isCorrect = item.accepted.some(acc => cleanStr(acc) === cleanedVal);
+
+  recordAnswer(itemId, val, isCorrect, item.tag);
+
+  if (isCorrect) {
+    fb.className = 'feedback-box correct';
+    fb.innerHTML = `✅ Correct! <strong>${item.answerText}</strong> — ${item.reason}`;
+  } else {
+    fb.className = 'feedback-box wrong';
+    fb.innerHTML = `<span class="tag-badge tag-${item.tag.toLowerCase()}">[${item.tag}]</span> Correct answer: <strong>${item.answerText}</strong>.<br>${item.reason}`;
+  }
+  checkReviewAlert();
+}
+
+function renderComprehension() {
+  const container = document.getElementById('comprehensionQuestionsContainer');
+  if (!container) return;
+  container.innerHTML = COMPREHENSION_DATA.map((c, i) => `
+    <div style="margin-bottom:12px; padding:10px; background:#fff; border:1px solid #e2e8f0; border-radius:6px;">
+      <p style="font-weight:600;">${i + 1}. ${c.q}</p>
+      <input class="input-text" style="margin-top:6px;" placeholder="Write your answer...">
+      <button class="btn btn-outline btn-sm" onclick="this.nextElementSibling.style.display='block'">Show Model Answer</button>
+      <div style="display:none; margin-top:6px; font-size:0.88rem; color:#15803d;"><strong>Target:</strong> ${c.a}</div>
+    </div>
+  `).join('');
+}
+
+function recordAnswer(itemId, userVal, isCorrect, tag) {
+  state.answers[itemId] = { userVal, isCorrect, tag };
+  recalcTallies();
+  saveState();
+}
+
+function recalcTallies() {
+  state.tagCounts = { F: 0, P: 0, S: 0, W: 0, R: 0 };
+  Object.values(state.answers).forEach(ans => {
+    if (!ans.isCorrect && ans.tag && state.tagCounts[ans.tag] !== undefined) {
+      state.tagCounts[ans.tag]++;
+    }
+  });
+}
+
+function checkReviewAlert() {
+  let rCountInType0 = 0;
+  EXERCISES.type0.forEach(item => {
+    const rec = state.answers[item.id];
+    if (rec && !rec.isCorrect) rCountInType0++;
+  });
+  const alertEl = document.getElementById('type0_warning');
+  if (alertEl) {
+    alertEl.style.display = (rCountInType0 >= 2) ? 'block' : 'none';
+  }
+}
+
+function updateDashboard() {
+  const totalItems = 40;
+  const completed = Object.keys(state.answers).length;
+  
+  const totalEl = document.getElementById('countTotalDone');
+  if (totalEl) totalEl.innerText = `${completed} / ${totalItems}`;
+
+  ['F', 'P', 'S', 'W', 'R'].forEach(tag => {
+    const el = document.getElementById('countTag' + tag);
+    if (el) el.innerText = state.tagCounts[tag] || 0;
+  });
+
+  const tipEl = document.getElementById('targetedStudyTip');
+  if (!tipEl) return;
+
+  let maxTag = null;
+  let maxVal = 0;
+  for (const [tag, count] of Object.entries(state.tagCounts)) {
+    if (count > maxVal) {
+      maxVal = count;
+      maxTag = tag;
+    }
+  }
+
+  const tips = {
+    'F': '⚡ Study Tip for Form [F]: Focus on using "had" (never drop it, and never write have/has for earlier past). Review Form Table B3.',
+    'P': '⚡ Study Tip for Participles [P]: Memorize column 3 (V3) from the 15 Core Verbs table (Table B7).',
+    'S': '⚡ Study Tip for Sequence [S]: Identify which event was EARLIER in time. Put "had + V3" only on the earlier event!',
+    'W': '⚡ Study Tip for Signal Words [W]: Review the Signal Words Table (B4). Remember: "after" introduces the earlier past.',
+    'R': '⚡ Study Tip for Review [R]: You have review errors with present/past simple. Re-read Section A1 and A2.'
+  };
+
+  if (maxTag && maxVal > 0) {
+    tipEl.innerHTML = `<strong>Identified Weak Area: [${maxTag}]</strong><br>${tips[maxTag]}`;
+  } else if (completed > 0) {
+    tipEl.innerHTML = '<strong>Excellent Work!</strong> No significant error cluster detected. Keep practising!';
+  }
+}
+
+function renderMasterAnswerKey() {
+  const container = document.getElementById('masterAnswerKeyContent');
+  if (!container) return;
+
+  let html = '';
+  ['type0', 'type1', 'type2', 'type3', 'type4'].forEach(typeKey => {
+    const titleMap = {
+      type0: 'Type 0 — Review Checkpoint (Present vs Past Simple)',
+      type1: 'Type 1 — Form Drill (had + V3)',
+      type2: 'Type 2 — Choose the Correct Form (Past Simple vs Past Perfect)',
+      type3: 'Type 3 — Sentence Combinations',
+      type4: 'Type 4 — Find and Fix the Mistake'
+    };
+    html += `<h5 style="margin-top:16px; margin-bottom:8px; font-weight:700; color:#1e293b;">${titleMap[typeKey]}</h5>`;
+    html += `<div class="table-wrapper"><table><thead><tr><th>#</th><th>Prompt / Item</th><th>Target Answer</th><th>Diagnostic Rationale</th><th>Tag</th></tr></thead><tbody>`;
+    EXERCISES[typeKey].forEach((item, idx) => {
+      html += `
+        <tr>
+          <td>${idx + 1}</td>
+          <td>${item.prompt}</td>
+          <td><strong>${item.answerText}</strong></td>
+          <td>${item.reason}</td>
+          <td><span class="tag-badge tag-${item.tag.toLowerCase()}">[${item.tag}]</span></td>
+        </tr>
+      `;
+    });
+    html += `</tbody></table></div>`;
+  });
+  container.innerHTML = html;
+}
+
+const timers = {};
+function toggleTimer(id, defaultDuration) {
+  if (!timers[id]) {
+    timers[id] = { remaining: defaultDuration, interval: null, running: false };
+  }
+  const t = timers[id];
+  if (t.running) {
+    clearInterval(t.interval);
+    t.running = false;
+  } else {
+    t.running = true;
+    t.interval = setInterval(() => {
+      if (t.remaining > 0) {
+        t.remaining--;
+        const mins = String(Math.floor(t.remaining / 60)).padStart(2, '0');
+        const secs = String(t.remaining % 60).padStart(2, '0');
+        document.getElementById('timer' + id).innerText = `${mins}:${secs}`;
+      } else {
+        clearInterval(t.interval);
+        t.running = false;
+        alert(`Time is up for task ${id}!`);
+      }
+    }, 1000);
+  }
+}
+
+function resetTimer(id, defaultDuration) {
+  if (timers[id]) {
+    clearInterval(timers[id].interval);
+    timers[id].remaining = defaultDuration;
+    timers[id].running = false;
+  }
+  const mins = String(Math.floor(defaultDuration / 60)).padStart(2, '0');
+  const secs = String(defaultDuration % 60).padStart(2, '0');
+  document.getElementById('timer' + id).innerText = `${mins}:${secs}`;
+}
+
+function revealNextFrame(taskId) {
+  const items = document.querySelectorAll(`[id^="${taskId}_frame_"]`);
+  for (let el of items) {
+    if (!el.classList.contains('revealed')) {
+      el.classList.add('revealed');
+      break;
+    }
+  }
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  renderCoreVerbs();
+  renderCheckpointA3();
+  renderType0();
+  renderType2();
+  renderInputExercise('type1', 'exercise_type1_container');
+  renderInputExercise('type3', 'exercise_type3_container');
+  renderInputExercise('type4', 'exercise_type4_container');
+  renderComprehension();
+  renderMasterAnswerKey();
+  loadState();
+  updateDashboard();
+  checkReviewAlert();
+});
+</script>
+</body>
+</html>
